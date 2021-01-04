@@ -1,0 +1,183 @@
+/* Clase placeholder - extend - no permite agregar parametros*/
+main .list-article-product, main .list-aside-product {
+  margin: 4% 0;
+}
+
+.neograf-fonts h5 {
+  color: #c43bfc;
+}
+
+.neograf-product-img-price-txt .neograf-product-price {
+  color: #fcae51;
+  font-weight: bold;
+}
+.neograf-product-img-price-txt .neograf-product-quantity {
+  color: #999;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.logo-size {
+  height: 80px;
+  width: 110px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.navbar-nav > li {
+  margin: 0 1%;
+}
+.navbar-nav > li:last-of-type {
+  margin-right: 40px;
+}
+.navbar-nav > li a {
+  border: 2px solid;
+  border-image-source: linear-gradient(to left, #5ba4fc, #7c7cfc, #9c73eb, #a856fc, #bc4cfc, #c43bfc, #f21cec, #fc51ae, #fc807f, #fcae51);
+  border-image-slice: 1;
+}
+
+.carousel-height-600 {
+  height: 600px;
+}
+
+main section .end-section-neograf {
+  margin-top: 5%;
+  border: 5px solid;
+  border-image-source: linear-gradient(to left, #5ba4fc, #7c7cfc, #9c73eb, #a856fc, #bc4cfc, #c43bfc, #f21cec, #fc51ae, #fc807f, #fcae51);
+  border-image-slice: 1;
+}
+main section .object-separate-neograf {
+  width: 20%;
+  position: static;
+}
+main section .van-separate-neograf {
+  top: auto;
+  left: auto;
+}
+main section .container-color-neograf {
+  border: 2px solid;
+  border-image-source: linear-gradient(to left, #5ba4fc, #7c7cfc, #9c73eb, #a856fc, #bc4cfc, #c43bfc, #f21cec, #fc51ae, #fc807f, #fcae51);
+  border-image-slice: 1;
+}
+main section .container-color-neograf .media-float-right {
+  float: right;
+}
+main section .aboutus-p-neograf {
+  padding: 5%;
+}
+main section .div-m-title-neograf {
+  margin: 5% 0;
+}
+main section:hover .object-separate-neograf {
+  transition: all 1.5s ease-in-out;
+}
+main section:hover .move-right {
+  width: 55%;
+  transform: translate(350px, 0);
+}
+
+.boton-e-viewMore {
+  width: 6.5%;
+  margin-bottom: 1%;
+}
+
+footer {
+  margin: auto;
+  color: white;
+}
+footer .footer-header-neograf {
+  background: linear-gradient(to right, #5ba4fc, #7c7cfc, #9c73eb, #a856fc, #bc4cfc, #c43bfc, #f21cec, #fc51ae, #fc807f, #fcae51);
+}
+footer .footer-p-neograf {
+  font-size: 12px;
+}
+
+/* Stile Menu para productos */
+.list-group-item.active {
+  background-color: #9c73eb;
+  border-color: #fc807f;
+}
+
+main {
+  background-color: #f0e7fc;
+}
+main .list-aside-product .group-aside-product {
+  text-align: center;
+}
+main .list-article-product .neograf-product-card {
+  background-color: #fff;
+  text-align: center;
+  padding: 8%;
+}
+main .list-article-product .neograf-product-card .neograf-product-img-card .neograf-imagen-responsive {
+  height: auto;
+  width: 330px;
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-nav > li:last-of-type {
+    margin-right: 1%;
+  }
+  .navbar-nav > li a {
+    text-align: center;
+  }
+
+  .carousel-height-600 {
+    height: 200px;
+  }
+
+  .object-separate-neograf {
+    width: 55%;
+  }
+
+  .media-float-right {
+    float: none;
+    margin-left: 0;
+  }
+
+  .media-float-right iframe {
+    height: auto;
+    width: 100%;
+  }
+
+  .product-w-neograf {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-body-redefine-neograf {
+    width: max-content;
+    height: max-content;
+  }
+
+  .boton-e-viewMore {
+    width: max-content;
+  }
+}
+@media only screen and (min-width: 401px) {
+  .card-neograf {
+    max-width: 540px;
+    border: 2px solid black;
+  }
+
+  .card-body-redefine-neograf {
+    width: 200px;
+    height: 180px;
+  }
+
+  .product-w-neograf {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6);
+  }
+
+  .product-w-neograf:hover {
+    transform: scale(0.9);
+    box-shadow: 8px 25px 13px -19px;
+    transition: all 0.8s ease-in-out;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

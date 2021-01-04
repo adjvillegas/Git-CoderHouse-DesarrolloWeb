@@ -1,0 +1,115 @@
+/* Stile Menu para productos */
+.list-group-item.active {
+
+        background-color: $color-third;
+        border-color: $color-nineth;
+}
+
+main {
+
+    background-color: $color-third-light;
+
+    .list-aside-product {
+        
+        @extend %list-product-margin;
+
+        .group-aside-product {
+            text-align: center;
+        }
+
+    }
+
+    .list-article-product {
+        @extend %list-product-margin;
+
+            .neograf-product-card {
+                
+                background-color: $color-zero;
+                text-align: center;
+                padding: 8%;
+
+                .neograf-product-img-card {
+
+                    .neograf-imagen-responsive {
+                        height: auto;
+                        width: 330px;
+                    }
+                }
+            }
+    }
+}
+
+
+// main {
+
+//     background-color: #beb1d2;
+
+//     .section-nav-product {
+
+//         height: 1000px;
+//         border: 1px solid #7f69a5;
+
+//         aside {
+
+//             margin: 5% 0;
+
+//             // div {
+
+//                 ul {
+
+//                     background-color: #f6f6f6;
+//                     border: 2px solid #7f69a5;
+//                     list-style: none;
+//                     padding: 0;
+
+//                     li {
+
+//                         padding: 5%;
+//                         text-align: center;
+
+//                         a {
+//                             text-decoration: none;
+//                             &:link {
+//                                 color: purple;
+//                             }
+//                         }
+//                     }
+
+
+                    
+//                 }
+
+//             // }
+//         }
+
+//         // article {
+//         //     div {
+//         //             display: none;
+//         //         &:target {
+//         //             display: flex;
+//         //         }
+
+//         //         &:target::after, aside ul li a{
+//         //             text-decoration: overline;
+//         //         }
+//         //     }
+
+//         // }
+
+//     }
+// }
+
+// .productMenu {
+//     border: 4px solid black;
+//     margin-right: 80%;
+//     margin-left: 30px;
+//     list-style: none;
+
+//     li {
+//         margin: 10px 5px;
+//         padding: 30px;
+//         background-color: deepskyblue;
+//         font-family: sans-serif;
+//         border-radius: 15px;
+//     }
+// }

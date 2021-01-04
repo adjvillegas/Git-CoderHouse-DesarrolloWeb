@@ -1,0 +1,60 @@
+//Estilos esclusivos para ampliación y adaptación de elementos dentro de MAIN
+
+main {
+
+     section {
+
+          .end-section-neograf {
+            margin-top: 5%;
+            @include m-border(5px);
+        }
+
+        .object-separate-neograf {
+            width: 20%;
+            position: static;
+
+        }
+
+        .van-separate-neograf {
+            top: auto;
+            left: auto;
+        }
+
+        .container-color-neograf {
+            @include m-border(2px);
+
+            .media-float-right {
+                float: right;
+            }
+        }
+        
+        .aboutus-p-neograf {
+            padding: 5%;
+        }        
+
+        .div-m-title-neograf {
+            margin: 5% 0;
+        }        
+
+        &:hover {
+
+            .object-separate-neograf {
+                transition: all 1.5s ease-in-out;
+            }
+            .move-right {
+                width: 55%;
+                @include m-transform(translate(350px,0));
+            }
+
+        }
+        
+    }
+
+} 
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+//Estilos esclusivos para ampliación y adaptación de elementos dentro de dispositivos Mobiles
+
+@media only screen and (max-width: 400px ) {
+
+    .navbar-nav > li {
+
+        &:last-of-type {
+            @include m-margin-right(1%);
+        }
+        a {
+            text-align: center;
+        }         
+    }
+
+    .carousel-height-600 {
+        height: 200px;
+    }
+    
+    .object-separate-neograf {
+        width: 55%;
+      }
+    
+      .media-float-right {
+        float: none;
+        margin-left: 0;
+    }  
+    
+    .media-float-right iframe {
+        height: auto;
+        width: 100%;
+    }  
+    
+    .product-w-neograf {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card-body-redefine-neograf {
+        width: max-content;
+        height: max-content;
+    }
+    
+    .boton-e-viewMore {
+        width: max-content; 
+    }
+    
+
+}

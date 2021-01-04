@@ -1,0 +1,14 @@
+//Estilos esclusivos para ampliación y adaptación de elementos dentro de Footer
+footer {
+    margin: auto;
+    color: $color-txt-secundary;  
+    
+    .footer-header-neograf {
+        background: $color-linear-gradient-r;
+    }
+
+    .footer-p-neograf {
+        font-size: 12px;
+    }
+
+}
