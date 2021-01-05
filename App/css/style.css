@@ -1,5 +1,5 @@
 /* Clase placeholder - extend - no permite agregar parametros*/
-main .list-article-product, main .list-aside-product {
+.main-products .list-article-product, .main-products .list-aside-product {
   margin: 4% 0;
 }
 
@@ -100,23 +100,23 @@ footer .footer-p-neograf {
   border-color: #fc807f;
 }
 
-main {
+.main-products {
   background-color: #f0e7fc;
 }
-main .list-aside-product .group-aside-product {
+.main-products .list-aside-product .group-aside-product {
   text-align: center;
 }
-main .list-article-product .neograf-product-card {
+.main-products .list-article-product .neograf-product-card {
   background-color: #fff;
   text-align: center;
   padding: 8%;
 }
-main .list-article-product .neograf-product-card .neograf-product-img-card .neograf-imagen-responsive {
+.main-products .list-article-product .neograf-product-card .neograf-product-img-card .neograf-imagen-responsive {
   height: auto;
   width: 330px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .navbar-nav > li:last-of-type {
     margin-right: 1%;
   }
@@ -156,7 +156,7 @@ main .list-article-product .neograf-product-card .neograf-product-img-card .neog
     width: max-content;
   }
 }
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 576px) {
   .card-neograf {
     max-width: 540px;
     border: 2px solid black;
