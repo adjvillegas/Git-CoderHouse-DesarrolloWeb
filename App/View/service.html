@@ -20,6 +20,7 @@
         crossorigin="anonymous"></script>
 
     <title>Imprenta NeoGraf</title>
+
 </head>
 
 <body>
@@ -67,26 +68,26 @@
     <main>
         <section class="container">
             <h5>Información para Contacto</h5>
-            <form class="row g-3" action="mailto:adj.villegas@gmail.com" method="post" enctype="text/plain">
+            <form class="row g-3" method="post" name="google-sheet">
                 <div class="col-md-6">
                     <label for="inputName" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="inputName">
+                    <input type="text" class="form-control" id="inputName" name="Nombre">
                 </div>
                 <div class="col-md-6">
                     <label for="inputLasName" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="inputLasName">
+                    <input type="text" class="form-control" id="inputLasName" name="Apellido">
                 </div>
                 <div class="col-md-12">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control" id="inputEmail4" name="Email">
                 </div>
                 <div class="col-md-6">
                     <label for="inputCity" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" class="form-control" id="inputCity" name="Ciudad">
                 </div>
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">Provincia</label>
-                    <select id="inputState" class="form-select">
+                    <select id="inputState" class="form-select" name="Provincia">
                         <option selected>Selecciona...</option>
                         <option>Buenos Aires</option>
                         <option>Santa Fe</option>
@@ -98,24 +99,24 @@
                 </div>
                 <div class="col-md-2">
                     <label for="inputZip" class="form-label">Codigo Postal</label>
-                    <input type="text" class="form-control" id="inputZip">
+                    <input type="text" class="form-control" id="inputZip" name="Cp">
                 </div>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Direccion</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Catamarca 2897">
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Catamarca 2897" name="Direccion">
                 </div>
                 <div class="col-2">
                     <label for="InputCaracteristica" class="form-label">Caracteristica</label>
-                    <input type="text" class="form-control" id="InputCaracteristica" placeholder="011">
+                    <input type="text" class="form-control" id="InputCaracteristica" placeholder="011" name="Caracteristica">
                 </div>
                 <div class="col-10">
                     <label for="InputTelephone" class="form-label">Telefono</label>
-                    <input type="text" class="form-control" id="InputTelephone" placeholder="123123">
+                    <input type="text" class="form-control" id="InputTelephone" placeholder="123123" name="Telefono">
                 </div>
                 <h6>Selecciona el servicio a Contratar</h5>
                     <div class="col-md-6">
                         <label for="inputService" class="form-label">Servicio</label>
-                        <select id="inputService" class="form-select">
+                        <select id="inputService" class="form-select" name="Servicio">
                             <option selected>Selecciona...</option>
                             <option>Impresión</option>
                             <option>Almanaque</option>
@@ -124,18 +125,30 @@
                     </div>
                     <div class="col-6">
                         <label for="InputCantidad" class="form-label">Cantidad</label>
-                        <input type="text" class="form-control" id="InputCantidad">
+                        <input type="text" class="form-control" id="InputCantidad" name="Cantidad">
                     </div>
                     <div class="mb-12">
                         <label for="formFile" class="form-label">Seleccionar Archivo</label>
-                        <input class="form-control" type="file" id="formFile">
+                        <input class="form-control" type="file" id="formFile" name="File">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Solicitar</button>
+                        <input type="submit" name="submit" class="btnSubmit btn-block" value="Solicitar" />
                     </div>
             </form>
         </section>
     </main>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysCTlFFv1cj9EJOvz7-X8wiPdu1rupc26qgM5Km-GEKbFionk/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Gracias por elegirnos, nos contactaremos a la brevedad!"))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>    
 </body>
 
 </html>
