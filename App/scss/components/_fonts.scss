@@ -1,4 +1,7 @@
 
+.txt-center {
+    text-align: center;
+}
 
 .neograf-fonts {
     
@@ -10,6 +13,17 @@
     }
 }
 
+.neograf-fonts-link {
+
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+}
 .neograf-product-img-price-txt {
     .neograf-product-price {
 

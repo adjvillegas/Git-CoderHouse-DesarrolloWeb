@@ -3,12 +3,23 @@
   margin: 4% 0;
 }
 
+.txt-center {
+  text-align: center;
+}
+
 .neograf-fonts {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1em;
 }
 .neograf-fonts h5 {
   color: #c43bfc;
+}
+
+.neograf-fonts-link li {
+  list-style: none;
+}
+.neograf-fonts-link li a {
+  text-decoration: none;
 }
 
 .neograf-product-img-price-txt .neograf-product-price {
@@ -26,10 +37,6 @@
   width: 110px;
 }
 
-.txt-center {
-  text-align: center;
-}
-
 .navbar-nav > li {
   margin: 0 1%;
 }
@@ -40,6 +47,115 @@
   border: 2px solid;
   border-image-source: linear-gradient(to left, #5ba4fc, #7c7cfc, #9c73eb, #a856fc, #bc4cfc, #c43bfc, #f21cec, #fc51ae, #fc807f, #fcae51);
   border-image-slice: 1;
+}
+
+@keyframes animation-nav {
+  0% {
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  5% {
+    background-color: #5ba4fc;
+    border: 1px solid #5ba4fc;
+  }
+  10% {
+    background-color: #7c7cfc;
+    border: 1px solid #7c7cfc;
+  }
+  15% {
+    background-color: #9c73eb;
+    border: 1px solid #9c73eb;
+  }
+  20% {
+    background-color: #a856fc;
+    border: 1px solid #a856fc;
+  }
+  25% {
+    background-color: #bc4cfc;
+    border: 1px solid #bc4cfc;
+  }
+  30% {
+    background-color: #c43bfc;
+    border: 1px solid #c43bfc;
+  }
+  35% {
+    background-color: #f21cec;
+    border: 1px solid #f21cec;
+  }
+  40% {
+    background-color: #fc51ae;
+    border: 1px solid #fc51ae;
+  }
+  45% {
+    background-color: #fc807f;
+    border: 1px solid #fc807f;
+  }
+  50% {
+    background-color: #9c73eb;
+    border: 1px solid #9c73eb;
+  }
+  60% {
+    background-color: #fc807f;
+    border: 1px solid #fc807f;
+  }
+  65% {
+    background-color: #fc51ae;
+    border: 1px solid #fc51ae;
+  }
+  70% {
+    background-color: #f21cec;
+    border: 1px solid #f21cec;
+  }
+  75% {
+    background-color: #c43bfc;
+    border: 1px solid #c43bfc;
+  }
+  80% {
+    background-color: #bc4cfc;
+    border: 1px solid #bc4cfc;
+  }
+  85% {
+    background-color: #a856fc;
+    border: 1px solid #a856fc;
+  }
+  90% {
+    background-color: #9c73eb;
+    border: 1px solid #9c73eb;
+  }
+  95% {
+    background-color: #7c7cfc;
+    border: 1px solid #7c7cfc;
+  }
+  100% {
+    background-color: #5ba4fc;
+    border: 1px solid #5ba4fc;
+  }
+}
+.neograf-nav .neograf-nav-bar {
+  align-self: center;
+}
+.neograf-nav .neograf-nav-bar ul {
+  justify-content: space-around;
+}
+.neograf-nav .neograf-nav-bar ul li {
+  justify-content: right;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px solid #fc51ae;
+  border-radius: 5px;
+}
+.neograf-nav .neograf-nav-bar ul li a {
+  color: #5ba4fc;
+}
+.neograf-nav .neograf-nav-bar ul li:hover {
+  animation-name: animation-nav;
+  animation-duration: 5s;
+}
+.neograf-nav .neograf-nav-bar ul li:hover a {
+  color: white;
+  animation: tada;
+  animation-duration: 1s;
 }
 
 .carousel-height-600 {
