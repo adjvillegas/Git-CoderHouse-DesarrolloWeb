@@ -3,6 +3,10 @@
   margin: 4% 0;
 }
 
+.neograf-fonts {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
 .neograf-fonts h5 {
   color: #c43bfc;
 }
@@ -112,8 +116,8 @@ footer .footer-p-neograf {
   padding: 8%;
 }
 .main-products .list-article-product .neograf-product-card .neograf-product-img-card .neograf-imagen-responsive {
-  height: auto;
-  width: 330px;
+  height: inherit;
+  width: inherit;
 }
 
 @media only screen and (max-width: 576px) {
