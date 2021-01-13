@@ -133,12 +133,13 @@
 }
 .neograf-nav .neograf-nav-bar {
   align-self: center;
+  width: 70%;
 }
 .neograf-nav .neograf-nav-bar ul {
   justify-content: space-around;
 }
 .neograf-nav .neograf-nav-bar ul li {
-  justify-content: right;
+  align-self: center;
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
@@ -148,12 +149,19 @@
 .neograf-nav .neograf-nav-bar ul li a {
   color: #5ba4fc;
 }
+.neograf-nav .neograf-nav-bar ul li a p {
+  margin: 0%;
+}
 .neograf-nav .neograf-nav-bar ul li:hover {
   animation-name: animation-nav;
   animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform: scale(1.4);
 }
 .neograf-nav .neograf-nav-bar ul li:hover a {
   color: white;
+}
+.neograf-nav .neograf-nav-bar ul li:hover a p {
   animation: tada;
   animation-duration: 1s;
 }

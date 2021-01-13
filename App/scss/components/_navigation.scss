@@ -119,51 +119,57 @@
 
 .neograf-nav {
 
+
+
     .neograf-nav-bar {
 
         align-self: center; 
+        width: 70%;
   
       ul {
  
         justify-content: space-around;
           
           li {
-            justify-content: right; 
+
+              align-self: center; 
               text-align: center;
               font-size: 1.2em;
               font-weight: bold;
   
               border: 2px solid $color-eighth;
               border-radius: 5px;
-  
- 
-            //   margin-left: 1%;
+
+
   
               a {
 
                   color: $color-first;
-                //   margin: 2%;
-                //   padding: 10%;
+
                 p {
-                    
+                    margin: 0%;
+                    // padding: 2% 20%;
                 }
               
             }
   
               &:hover {
   
-  
                   animation-name: animation-nav;
                   animation-duration: 5s;
-                //   animation-iteration-count: infinite;
+                  animation-iteration-count: infinite;
+                  transform: scale(1.4);
   
                   a {
+
                       color: white;
 
-                    //   p {
+                      p {
+
                       animation: tada;
                       animation-duration: 1s;
-                    //   }
+
+                      }
 
                   }
   
