@@ -1,16 +1,57 @@
 //Estilos esclusivos para ampliación y adaptación de elementos dentro de MAIN
 
+body {
+    background: linear-gradient($color-zero 5%, $color-third-light 95%);
+}
+
 main {
 
-     section {
+    // padding-top: 10%;
+    position: relative;
+    // background-color: #ffffff;
+    // 
+    // opacity: 30%;
+    // background-color: $color-fill;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    .section-card-neograf {
+          
+            // padding: 8%;
+            position: static;
+            margin-top: 4%;
+            // height: 280px;            
+
+            article {
+
+                display: flex;
+                justify-content: center;
+                align-self: center;
+
+                .container-article {
+                    // background-color: white;
+                margin: 5%;
+                padding: 5%;
+                border: 2px solid $color-third-light;
+                box-shadow: -1px 11px 31px 6px rgba(0,0,0,0.35);
+                border-radius: 10px;
+                width: 100%;  
+                // opacity: 50%;
+                // height: 90%;
+
+                }
+
+
+            }
+
 
           .end-section-neograf {
-            margin-top: 5%;
+            // margin-top: 5%;
             @include m-border(5px);
         }
 
         .object-separate-neograf {
-            width: 20%;
+            // width: 20%;
             position: static;
 
         }
@@ -29,11 +70,11 @@ main {
         }
         
         .aboutus-p-neograf {
-            padding: 5%;
+            // padding: 5%;
         }        
 
         .div-m-title-neograf {
-            margin: 5% 0;
+            // margin: 5% 0;
         }        
 
         &:hover {
@@ -48,6 +89,25 @@ main {
 
         }
         
+    }
+
+    .section-product-neograf {
+        border: 1px solid black;
+        background-color: black;
+
+        .content_product_index {
+ 
+            // width: 100%;
+            // height: auto;
+            display: flex;
+            justify-content: space-around;
+
+            .card-algo {
+                background-color: white;
+                height: 300px;
+                width: 300px;
+            }
+        }        
     }
 
 } 

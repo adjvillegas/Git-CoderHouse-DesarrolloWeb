@@ -18,7 +18,7 @@
     
     .product-w-neograf:hover {
         @include m-transform(scale(0.9));
-        box-shadow: 8px 25px 13px -19px;
+        // box-shadow: 8px 25px 13px -19px;
         // position: absolute;
         transition: all 0.8s ease-in-out;
     }
