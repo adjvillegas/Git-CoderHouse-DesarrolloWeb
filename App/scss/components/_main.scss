@@ -6,22 +6,15 @@ body {
 
 main {
 
-    // padding-top: 10%;
     position: relative;
-    // background-color: #ffffff;
-    // 
-    // opacity: 30%;
-    // background-color: $color-fill;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 
     .section-card-neograf {
           
-            // padding: 8%;
             position: static;
             margin-top: 4%;
-            // height: 280px;            
-
+ 
             article {
 
                 display: flex;
@@ -29,29 +22,26 @@ main {
                 align-self: center;
 
                 .container-article {
-                    // background-color: white;
+ 
                 margin: 5%;
                 padding: 5%;
                 border: 2px solid $color-third-light;
                 box-shadow: -1px 11px 31px 6px rgba(0,0,0,0.35);
                 border-radius: 10px;
                 width: 100%;  
-                // opacity: 50%;
-                // height: 90%;
 
                 }
 
 
             }
 
-
           .end-section-neograf {
-            // margin-top: 5%;
+
             @include m-border(5px);
         }
 
         .object-separate-neograf {
-            // width: 20%;
+
             position: static;
 
         }
@@ -70,11 +60,11 @@ main {
         }
         
         .aboutus-p-neograf {
-            // padding: 5%;
+
         }        
 
         .div-m-title-neograf {
-            // margin: 5% 0;
+ 
         }        
 
         &:hover {
@@ -92,13 +82,9 @@ main {
     }
 
     .section-product-neograf {
-        border: 1px solid black;
-        background-color: black;
 
         .content_product_index {
- 
-            // width: 100%;
-            // height: auto;
+
             display: flex;
             justify-content: space-around;
 
@@ -111,6 +97,138 @@ main {
     }
 
 } 
+
+.row-title-card {
+    margin: 3%;
+    align-self: center;
+}
+
+@keyframes animation-bot-right {
+
+    0% {
+        top: -220px;
+        left: 10px;
+        z-index: 5;    
+    }
+
+    40% {
+        top: -140px;
+        left: 90px;
+        z-index: 5;
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    60% {
+        top: -140px;
+        left: 90px;
+        z-index: 4;   
+    }
+
+    100% {
+        top: -220px;
+        left: 10px;
+        z-index: 4;    
+    }
+
+}
+
+@keyframes animation-top-left {
+
+
+    0% {
+        top: 0px;
+        right: 0px;
+        z-index: 4;  
+    }
+
+    40% {
+        top: -89px;
+        right: 90px;
+        z-index: 4;   
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    60% {
+        top: -89px;
+        right: 90px;
+        z-index: 5;    
+    }
+
+    100% {
+        top: 0px;
+        right: 0px;
+        z-index: 5; 
+    }
+
+}
+
+.container-card-product {
+
+    display: flex;
+    justify-content: space-around;
+
+    .card-product {
+        height: 230px; 
+
+        .card-product-info {
+            display: flex;
+            position: relative;
+            background-color: white;           
+            z-index: 4;
+            justify-content: center;
+            align-self: center;         
+        }
+
+        .card-product-photo {
+            display: flex;            
+            position: relative;
+            top: -229px;
+            z-index: 5;
+            box-shadow: -1px 11px 31px 6px rgba(0,0,0,0.35);
+        }
+
+        .card-responsive {
+            height: 100%;
+            width: 100%;
+        }
+
+        &:hover {
+
+                .card-animation-bot-right {
+                    animation-name: animation-bot-right;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-out;
+                    z-index: 4;
+                    border-radius: 5%;
+                    img {
+                        border-radius: 5%;
+                    }
+                }
+
+                .card-animation-top-left {
+                    animation-name: animation-top-left;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-out;
+                    z-index: 5;
+                    transform: scale(0.9);
+                    opacity: 0.7;
+                    border-radius: 5%;
+                    background-color: $color-fifth;                    
+                }
+
+        }
+
+    }
+}
+
+.product-photo-responsive {
+    height: 100%;
+    width: 100%;
+}
 
 
 

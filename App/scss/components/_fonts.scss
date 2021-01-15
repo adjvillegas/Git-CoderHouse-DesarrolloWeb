@@ -1,6 +1,11 @@
 
 .txt-center {
     text-align: center;
+    margin: 1%;
+}
+
+.card-text-neograf {
+    text-align: center;
 }
 
 .neograf-fonts {
@@ -12,6 +17,11 @@
         color: $color-sixth;
     }
 }
+
+    .card-style-font {
+        // color: #FCB35B;
+        color: whitesmoke;
+    }
 
 .neograf-fonts-link {
 

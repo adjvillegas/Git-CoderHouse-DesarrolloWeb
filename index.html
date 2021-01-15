@@ -195,13 +195,17 @@
       <article class="col-12">
       <!--    BEGIN - Sub-Sección 1: Home => Contiene Subtitulo +  Información de Bienvenida-->
           <div class="container-article">
-            <h1 class="txt-center">¡Bienvenidos a la Imprenta!</h1>
-            <p class="txt-center">En nuestra pagina, encontrará los mejores productos y servicio. Además de poder
-              personalizas sus requerimientos</p>
-            <p class="txt-center">Por favor, no dudes en recorrerla y en caso de no encontrar lo que usted busca, no
-              dudes en
-              <a href="#Contact">¡Contactarnos!</a>
-            </p>
+            <div class="row row-title-card">
+              <h1 class="txt-center">¡Bienvenidos a la Imprenta!</h1>
+            </div>
+            <div class="row">
+              <p class="txt-center">En nuestra pagina, encontrará los mejores productos y servicio. Además de poder
+                personalizas sus requerimientos</p>
+              <p class="txt-center">Por favor, no dudes en recorrerla y en caso de no encontrar lo que usted busca, no
+                dudes en
+                <a href="#Contact">¡Contactarnos!</a>
+              </p>
+            </div>            
           </div>
       <!--    END - Sub-Sección 1: Home => Contiene Subtitulo + Información de Bienvenida -->
       </article>
@@ -216,7 +220,7 @@
         <article class="col-12">
           <div class="container-article">
 
-            <div class="row">
+            <div class="row row-title-card">
               <h2 class="txt-center">Sobre Nosotros</h2>
             </div>
        <!--    BEGIN - Contenido About Us -->
@@ -259,17 +263,64 @@
 
             <div class="container-flow">
 
-              <div class="row">
-                
+              <div class="row row-title-card">
+                <h2  class="txt-center">Nuestros Productos</h2> 
               </div>
-              <!-- <div> -->
-                <div class="card-algo"></div>
-                <div class="card-algo"></div>
-                <div class="card-algo"></div>
-                <div class="card-algo"></div>
-                <div class="card-algo"></div>
-                <div class="card-algo"></div>
-              <!-- </div> -->
+
+              <div class="row container-card-product">
+                  <div class="col-3 card-product">
+                    
+                        <div class="row card-responsive card-product-info card-animation-top-left">
+                          <div class="col-12 row-title-card">
+                          <h4 class="txt-center card-style-font">Almanaques</h4>
+                        </div>
+                        <div class="col-10">
+                    <p class="card-text-neograf card-style-font">Gran variedad de Almanaques.</p>
+                    <p class="card-text-neograf card-style-font">Nuevos formatos, tamaños y diseños, ideales para su empresa</p>
+                        </div>
+                        </div>
+                        
+                        <div class="card-responsive card-product-photo card-animation-bot-right">
+                          <img src="App/media/img/product1.jpg" alt="Almanaques - Producto destacado" class="product-photo-responsive">
+                        </div>
+                    
+                  </div>
+
+                  <div class="col-3 card-product">
+                    
+                    <div class="row card-responsive card-product-info card-animation-top-left">
+                      <div class="col-12 row-title-card">
+                      <h4 class="txt-center card-style-font">Encuadernados</h4>
+                    </div>
+                    <div class="col-10">
+                    <p class="card-text-neograf card-style-font">Nuestra experiencia garantiza la calidad del trabajo final.</p>
+                    <p class="card-text-neograf card-style-font">Contactenos para mayor información.</p>           
+                    </div>
+                    </div>
+                    
+                    <div class="card-responsive card-product-photo card-animation-bot-right">
+                      <img src="App/media/img/product2.jpg" alt="Encuadernado - Producto destacado" class="product-photo-responsive">
+                    </div>
+                
+                  </div>
+
+                  <div class="col-3 card-product">
+                    
+                    <div class="row card-responsive card-product-info card-animation-top-left">
+                      <div class="col-12 row-title-card">
+                      <h4 class="txt-center card-style-font">Impresiones</h4>
+                    </div>
+                    <div class="col-10">
+                    <p class="card-text-neograf card-style-font">Nuestras impresiones son lo que nos destacan del resto.</p>    
+                    </div>
+                    </div>
+                    
+                    <div class="card-responsive card-product-photo card-animation-bot-right">
+                      <img src="App/media/img/product3.jpg" alt="Impresiones - Producto destacado" class="product-photo-responsive">
+                    </div>
+                
+                  </div>
+              </div>
             </div>
             <!-- ****** INICIOOOOO  ******* -->
 
@@ -391,15 +442,21 @@
 
           <!--    BEGIN - Sub-Sección 1: Home => Contiene Subtitulo +  Información de Bienvenida-->
               <div class="container-article">
-                <h2 class="txt-center">Nuestros Servicios</h2>
+                <div class="row row-title-card">
+                  <h2 class="txt-center">Nuestros Servicios</h2>
+                </div>
 
+                <div class="row">
+                  <h5 class="txt-center">Servicios especiales para nuestros Clientes</h5>
+                  <p class="txt-center">Contamos con una gran cantidad de productos, que pueden ser adquiridos con una personalización especial en el pedido.</p>
+                  <p class="txt-center">Te ofrecemos que puedas realizarlo a través de nuestra web de forma cómoda y facil.</p>
+                </div>
 
-                <h5 class="txt-center">Servicios especiales para nuestros Clientes</h5>
-                <p class="txt-center">Contamos con una gran cantidad de productos, que pueden ser adquiridos con una personalización especial en el pedido.</p>
-                <p class="txt-center">Te ofrecemos que puedas realizarlo a través de nuestra web de forma cómoda y facil.</p>
-                <!--    BEGIN   - Agregado de Boton "Ver Mas" -->
-                <a href="App/View/service.html">Ver mas</a>
-                <!--    END   - Agregado de Boton "Ver Mas" -->                
+                <div class="row">
+                  <!--    BEGIN   - Agregado de Boton "Ver Mas" -->
+                  <a href="App/View/service.html">Ver mas</a>
+                  <!--    END   - Agregado de Boton "Ver Mas" -->  
+                </div>    
               </div>
               
                 
