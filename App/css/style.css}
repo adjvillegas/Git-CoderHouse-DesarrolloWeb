@@ -42,6 +42,9 @@
   width: 110px;
 }
 
+.navbar-nav > li {
+  margin: 0 1%;
+}
 .navbar-nav > li a {
   border: 2px solid;
   border-image-source: linear-gradient(to left, #5ba4fc, #7c7cfc, #9c73eb, #a856fc, #bc4cfc, #c43bfc, #f21cec, #fc51ae, #fc807f, #fcae51);
@@ -167,9 +170,21 @@
 .neograf-sub-nav .neograf-nav-bar ul li:hover a {
   color: white;
 }
+.neograf-sub-nav .neograf-nav-bar ul li:hover a .neograf-nav-bar-dropbox .neograf-nav-bar-dropbox-list .neograf-nav-bar-dropbox-list-item {
+  display: inline-flex;
+}
 .neograf-sub-nav .neograf-nav-bar ul li:hover a p {
   animation: tada;
   animation-duration: 1s;
+}
+
+.neograf-nav-bar-dropbox {
+  position: absolute;
+  left: 470px;
+  bottom: 10px;
+}
+.neograf-nav-bar-dropbox .neograf-nav-bar-dropbox-list {
+  display: none;
 }
 
 .custom-shape-divider-top-1610569154 {
@@ -487,4 +502,4 @@ footer .footer-p-neograf {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css%7D.map */
