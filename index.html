@@ -10,9 +10,10 @@
   <!-- SEO  -->
   <!-- Descripción clara y super entendible, para que el usuario tenga interes en nuestra opciones de busqueda -->
   <!-- Necesitamos hasta 160 caracteres -->
-  <meta name="description" content="Imprenta Neograf es una Imprenta de San Nicolas con mas de 20 años de experiencia"> 
+  <meta name="description" content="Imprenta Neograf es una Imprenta de San Nicolas con mas de 20 años de experiencia">
   <!-- Palabras claves que ayudan en la busqueda -->
-  <meta name="keywords" content="Imprenta, Neograf, San Nicolas de los Arroyos, Productos, Servicios, Almanaques, Folios, Articulos">
+  <meta name="keywords"
+    content="Imprenta, Neograf, San Nicolas de los Arroyos, Productos, Servicios, Almanaques, Folios, Articulos">
   <meta name="autor" content="Javier Villegas">
 
   <!-- Open graph - como es el modo al compartir -->
@@ -20,13 +21,14 @@
   <!-- Tipo de contenido  -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Imprenta Neograf">
-  <meta property="og:description" content="Imprenta Neograf es una Imprenta de mas de 20 años de experiencia la mejor Imprenta de San Nicolas en precio y calidad">
+  <meta property="og:description"
+    content="Imprenta Neograf es una Imprenta de mas de 20 años de experiencia la mejor Imprenta de San Nicolas en precio y calidad">
   <meta property="og:url" content="https://ImprentaNeograf.com.ar">
   <!-- Imagen que se va al compartir en redes sociales -->
-  <meta property="og:image" content="App/media/img/PNG LETRAS NEGRAS.png>
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="600">
 
+  <meta property="og:image" content="App/media/img/PNG LETRAS NEGRAS.png">
+  <meta property=" og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
 
   <link rel="shortcut icon" href="App/media/img/PNG LETRAS BLANCAS.PNG" type="image/x-icon">
   <!-- Personal CSS  -->
@@ -47,17 +49,46 @@
     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
     crossorigin="anonymous"></script>
 
+  <!-- Animations animate.style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
   <title>Imprenta NeoGraf</title>
 </head>
 
 <body>
   <header>
+
+    <!-- <nav class="container-flow" style="position: relative;">
+
+        <div class="custom-shape-divider-top-1610569154">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+  <path fill="#f0e7fc" fill-opacity="50" d="M0,32L34.3,80C68.6,128,137,224,206,245.3C274.3,267,343,213,411,208C480,203,549,245,617,272C685.7,299,754,309,823,272C891.4,235,960,149,1029,101.3C1097.1,53,1166,43,1234,64C1302.9,85,1371,139,1406,165.3L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+</svg>                  
+        </div> 
+      <div class="row neograf-sub-nav">
+
+        <div class="col-md-3">
+          <img src="App/media/img/PNG LETRAS NEGRAS.png" alt="" class="logo-size">
+        </div>
+        <div class="col-md-9 neograf-nav-bar">
+            <ul class="row neograf-fonts neograf-fonts-link">
+              <li class="col-md-2"><a href="#Home"><p>Inicio</p></a></li>
+              <li class="col-md-2"><a href="#AboutUs"><p>Conocenos</p></a></li>
+              <li class="col-md-2"><a href="#Products"><p>Productos</p></a></li>
+              <li class="col-md-2"><a href="#Service"><p>Contratanos</p></a></li>
+              <li class="col-md-2"><a href="#Contact"><p>Contacto</p></a></li>
+            </ul>
+        </div>  
+      </div>
+    </nav> -->
+
     <!-- BEGIN - AGREGADO DE BANNER + LOGO + MENU NAVEGABLE Y DESPLEGABLE -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
 
-          <img src="App/media/img/PNG LETRAS NEGRAS.png" alt="" class="logo-size">
- 
+        <img src="App/media/img/PNG LETRAS NEGRAS.png" alt="" class="logo-size">
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -156,219 +187,329 @@
     </a>
   </div>
   <!-- END - AGREGADO DE CAROUSEL  -->
+  <div class="main_cloth_container">
 
-  <main>
-    <!--    BEGIN - Sección: Se definen: Contenido principal de Home  -->
-    <!--<section id="Home" class="container section-m-neograf one"> -->
-    <section id="Home" class="container">
-      <!--    BEGIN - Sub-Sección 1: Home => Contiene Subtitulo +  Información de Bienvenida-->
- 
-      <div class="container-fluid d-flex justify-content-center div-m-title-neograf">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="txt-center">¡Bienvenidos a la Imprenta!</h1>
-            <p class="txt-center">En nuestra pagina, encontrará los mejores productos y servicio. Además de poder
-              personalizas sus requerimientos</p>
-            <p class="txt-center">Por favor, no dudes en recorrerla y en caso de no encontrar lo que usted busca, no
-              dudes en
-              <a href="#Contact">¡Contactarnos!</a>
-            </p>
+    <main class="container">
+
+      <!--    BEGIN - Sección: Se definen: Contenido principal de Home  -->
+      <section id="Home" class="row-12 section-card-neograf">
+
+        <article class="col-12">
+          <!--    BEGIN - Sub-Sección 1: Home => Contiene Subtitulo +  Información de Bienvenida-->
+          <div class="container-article">
+            <div class="row row-title-card">
+              <h1 class="txt-center">¡Bienvenidos a la Imprenta!</h1>
+            </div>
+            <div class="row">
+              <p class="txt-center">En nuestra pagina, encontrará los mejores productos y servicio. Además de poder
+                personalizas sus requerimientos</p>
+              <p class="txt-center">Por favor, no dudes en recorrerla y en caso de no encontrar lo que usted busca, no
+                dudes en
+                <a href="#Contact">¡Contactarnos!</a>
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="end-section-neograf object-separate-neograf van-separate-neograf move-right"></div>
-    </div>
-      <!--    END - Sub-Sección 1: Home => Contiene Subtitulo + Información de Bienvenida -->
-    </section>
-    <!--    END - Sección: Se definen: Contenido principal de Home  -->
-
-    <!--    BEGIN - Sección: Se definen: Contenido principal de Aboutus  -->
-    <!-- <section id="AboutUs" class="container section-m-neograf"> -->
-      <section id="AboutUs" class="container">      
-
-      <!--    BEGIN - Sub-Sección 2: About Us => Contiene Subtitulo + explicación de la organización + video de introducción -->
-      <!-- <div class="container-fluid d-flex justify-content-center section-m-neograf"> -->
-        <div class="container-fluid d-flex justify-content-center div-m-title-neograf">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="txt-center">Sobre Nosotros</h2>
-          </div>
-        </div>
-      </div>
-
-      <!--    BEGIN - Contenido About Us -->
-      <div class="container-color-neograf aboutus-p-neograf">
-        <!--    BEGIN - Video informativo-->
-        <article class="media-float-right">
-          <iframe width="560" height="250" src="https://www.youtube.com/embed/444-i9nwdWw" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+          <!--    END - Sub-Sección 1: Home => Contiene Subtitulo + Información de Bienvenida -->
         </article>
-        <!--    END - Video informativo-->
 
-        <!--    BEGIN - Texto Informativo-->
-        <article>
-          <p>La imprenta NeoGraf nacio en San Nicolas de los Arroyos y de los sueños de su creador hace mas de 10 años.</p>
-          <p>Somos una imprenta desarrollada para brindar servicios en cualquier
-            punto del país.</p>
+      </section>
+      <!--    END - Sección: Se definen: Contenido principal de Home  -->
 
-            El conocimiento de las necesidades del mercado, nos permiten tener un servicio de calidad total con nuestros
-            revendedores, destacando, que en cada proyecto somos socios estratégicos de cada uno de nuestros clientes,
-            logrando la satisfacción total del usuario final.</p>
-        </article>
-        <!--    END - Texto Informativo-->
-      </div>
-      <!--    END - Contenido About Us -->
-      <div class="end-section-neograf object-separate-neograf van-separate-neograf move-right"></div>
-      <!--    END - Sub-Sección 2: About Us => Contiene Subtitulo + explicación de la organización + video de introducción -->
+      <!--    BEGIN - Sección: Se definen: Contenido principal de Aboutus  -->
 
-    </section>
-    <!--    END - Sección: Se definen: Contenido principal de Aboutus  -->
+      <section id="AboutUs" class="row-12 section-card-neograf">
+        <!--    BEGIN - Sub-Sección 2: About Us => Contiene Subtitulo + explicación de la organización + video de introducción -->
+        <article class="col-12">
+          <div class="container-article">
 
-    <!--    BEGIN - Sección: Se definen: Contenido principal de Products  -->
-    <section id="Products" class="container">
-      <!-- <section id="Products" class="container section-m-neograf"> -->
-      <!--    BEGIN - Sub-Sección 3: Product => Contiene Subtitulo + Imagenes de los productos -->
-      <!--    BEGIN - Sub-Sección 2: About Us => Contiene Subtitulo + explicación de la organización + video de introducción -->
-      <div class="container-fluid d-flex justify-content-center div-m-title-neograf">
-        <!-- <div class="container-fluid d-flex justify-content-center section-m-neograf"> -->
-        <div class="row">
-          <div class="col-12">
-            <h2>Nuestros Productos</h2>
+            <div class="row row-title-card">
+              <h2 class="txt-center">Sobre Nosotros</h2>
+            </div>
+            <!--    BEGIN - Contenido About Us -->
+            <div class="row">
+              <!--    BEGIN - Texto Informativo-->
+              <div class="col-5">
+                <p>La imprenta NeoGraf nacio en San Nicolas de los Arroyos y de los sueños de su creador hace mas de 10
+                  años.</p>
+                <p>Somos una imprenta desarrollada para brindar servicios en cualquier
+                  punto del país.</p>
+
+                El conocimiento de las necesidades del mercado, nos permiten tener un servicio de calidad total con
+                nuestros
+                revendedores, destacando, que en cada proyecto somos socios estratégicos de cada uno de nuestros
+                clientes,
+                logrando la satisfacción total del usuario final.</p>
+              </div>
+              <!--    END - Texto Informativo-->
+
+              <!--    BEGIN - Video informativo-->
+              <div class="col-5">
+                <iframe width="560" height="250" src="https://www.youtube.com/embed/444-i9nwdWw" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <!--    END - Video informativo-->
+            </div>
+            <!--    END - Contenido About Us -->
           </div>
-        </div>
-      </div>
-      <div class="container row-xs-12">
-        <div class="row row-xs-12"> 
+          <!--    END - Sub-Sección 2: About Us => Contiene Subtitulo + explicación de la organización + video de introducción -->
+
+          <!-- </div> -->
+        </article>
+
+      </section>
+      <!--    END - Sección: Se definen: Contenido principal de Aboutus  -->
+
+      <!--    BEGIN - Sección: Se definen: Contenido principal de Products  -->
+      <!-- <section id="Products" class="container"> -->
+      <section id="Products" class="container-fluid section-product-neograf">
+
+        <article class="container-flow">
+
+          <div class="container-flow">
+
+            <div class="row row-title-card">
+              <h2 class="txt-center">Nuestros Productos</h2>
+            </div>
+
+            <div class="row container-card-product">
+              <div class="col-3 card-product">
+
+                <div class="row card-responsive card-product-info card-animation-top-left">
+                  <div class="col-12 row-title-card">
+                    <h4 class="txt-center card-style-font">Almanaques</h4>
+                  </div>
+                  <div class="col-10">
+                    <p class="card-text-neograf card-style-font">Gran variedad de Almanaques.</p>
+                    <p class="card-text-neograf card-style-font">Nuevos formatos, tamaños y diseños, ideales para su
+                      empresa</p>
+                  </div>
+                </div>
+
+                <div class="card-responsive card-product-photo card-animation-bot-right">
+                  <img src="App/media/img/product1.jpg" alt="Almanaques - Producto destacado"
+                    class="product-photo-responsive">
+                </div>
+
+              </div>
+
+              <div class="col-3 card-product">
+
+                <div class="row card-responsive card-product-info card-animation-top-left">
+                  <div class="col-12 row-title-card">
+                    <h4 class="txt-center card-style-font">Encuadernados</h4>
+                  </div>
+                  <div class="col-10">
+                    <p class="card-text-neograf card-style-font">Nuestra experiencia garantiza la calidad del trabajo
+                      final.</p>
+                    <p class="card-text-neograf card-style-font">Contactenos para mayor información.</p>
+                  </div>
+                </div>
+
+                <div class="card-responsive card-product-photo card-animation-bot-right">
+                  <img src="App/media/img/product2.jpg" alt="Encuadernado - Producto destacado"
+                    class="product-photo-responsive">
+                </div>
+
+              </div>
+
+              <div class="col-3 card-product">
+
+                <div class="row card-responsive card-product-info card-animation-top-left">
+                  <div class="col-12 row-title-card">
+                    <h4 class="txt-center card-style-font">Impresiones</h4>
+                  </div>
+                  <div class="col-10">
+                    <p class="card-text-neograf card-style-font">Nuestras impresiones son lo que nos destacan del resto.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-responsive card-product-photo card-animation-bot-right">
+                  <img src="App/media/img/product3.jpg" alt="Impresiones - Producto destacado"
+                    class="product-photo-responsive">
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- ****** INICIOOOOO  ******* -->
+
+          <!-- <section id="Products" class="container section-m-neograf"> -->
+          <!--    BEGIN - Sub-Sección 3: Product => Contiene Subtitulo + Imagenes de los productos -->
+          <!--    BEGIN - Sub-Sección 2: About Us => Contiene Subtitulo + explicación de la organización + video de introducción -->
+          <!-- <div class="container-fluid d-flex justify-content-center div-m-title-neograf"> -->
+          <!-- <div class="container-fluid d-flex justify-content-center section-m-neograf"> -->
+          <!-- <div class="row"> -->
+          <!-- <div class="col-12"> -->
+          <!-- <h2>Nuestros Productos</h2> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="container row-xs-12"> -->
+          <!-- <div class="row row-xs-12">  -->
           <!-- style="height: 200px;" -->
 
           <!--    BEGIN - Agregado de imagenes para visualización - Producto 1 -->
-          <div class="col col-xs-12">
-            <div class="card mb-3 card-neograf">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="App/media/img/product1.jpg" alt="Imagen Almanaque" class="product-w-neograf">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Almanaques</h5>
-                    <p class="card-text">Gran variedad de Almanaques.</p>
-                    <p class="card-text">Nuevos formatos, tamaños y diseños, ideales para su empresa
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- <div class="col col-xs-12"> -->
+          <!-- <div class="card mb-3 card-neograf"> -->
+          <!-- <div class="row g-0"> -->
+          <!-- <div class="col-md-4"> -->
+          <!-- <img src="App/media/img/product1.jpg" alt="Imagen Almanaque" class="product-w-neograf"> -->
+          <!-- </div> -->
+          <!-- <div class="col-md-8"> -->
+          <!-- <div class="card-body"> -->
+          <!-- <h5 class="card-title">Almanaques</h5> -->
+          <!-- <p class="card-text">Gran variedad de Almanaques.</p> -->
+          <!-- <p class="card-text">Nuevos formatos, tamaños y diseños, ideales para su empresa -->
+          <!-- </p> -->
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
           <!--    END   - Agregado de imagenes para visualización - Producto 1 -->
 
           <!--    BEGIN - Agregado de imagenes para visualización - Producto 2 -->
-          <div class="col col-xs-12">
-            <div class="card mb-3 card-neograf">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="App/media/img/product2.jpg" alt="Imagen Encuadernado" class="product-w-neograf">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Encuadernados</h5>
-                    <p class="card-text">Nuestra experiencia garantiza la calidad del trabajo final.</p>
-                    <p class="card-text">Contactenos para mayor información.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- <div class="col col-xs-12"> -->
+          <!-- <div class="card mb-3 card-neograf"> -->
+          <!-- <div class="row g-0"> -->
+          <!-- <div class="col-md-4"> -->
+          <!-- <img src="App/media/img/product2.jpg" alt="Imagen Encuadernado" class="product-w-neograf"> -->
+          <!-- </div> -->
+          <!-- <div class="col-md-8"> -->
+          <!-- <div class="card-body"> -->
+          <!-- <h5 class="card-title">Encuadernados</h5> -->
+          <!-- <p class="card-text">Nuestra experiencia garantiza la calidad del trabajo final.</p> -->
+          <!-- <p class="card-text">Contactenos para mayor información.</p> -->
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
           <!--    END   - Agregado de imagenes para visualización - Producto 2 -->
-        </div>
+          <!-- </div> -->
 
-        <div class="row row-xs-12">
-<!--  style="height: 200px;" -->
+          <!-- <div class="row row-xs-12"> -->
+          <!--  style="height: 200px;" -->
           <!--    BEGIN - Agregado de imagenes para visualización - Producto 3 -->
-          <div class="col col-xs-12">
-            <div class="card mb-3 card-neograf">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="App/media/img/product3.jpg" alt="Imagen Impresiones" class="product-w-neograf">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body card-body-redefine-neograf">
-                    <h5 class="card-title">Impresiones</h5>
-                    <p class="card-text">Nuestras impresiones son lo que nos destacan del resto.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- <div class="col col-xs-12"> -->
+          <!-- <div class="card mb-3 card-neograf"> -->
+          <!-- <div class="row g-0"> -->
+          <!-- <div class="col-md-4"> -->
+          <!-- <img src="App/media/img/product3.jpg" alt="Imagen Impresiones" class="product-w-neograf"> -->
+          <!-- </div> -->
+          <!-- <div class="col-md-8"> -->
+          <!-- <div class="card-body card-body-redefine-neograf"> -->
+          <!-- <h5 class="card-title">Impresiones</h5> -->
+          <!-- <p class="card-text">Nuestras impresiones son lo que nos destacan del resto.</p> -->
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
           <!--    END   - Agregado de imagenes para visualización - Producto 3 -->
 
-          <!--    BEGIN - Agregado de imagenes para visualización - Producto 4 -->
-          <div class="col col-xs-12">
-            <div class="card mb-3 card-neograf">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="App/media/img/product4.jpg" alt="Imagen Carteles" class="product-w-neograf">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Carteles</h5>
-                    <p class="card-text">Ofrecemos gran cantidad de diseños para sus carteles. Puede optar por materiales de vinilo o pegatinas.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- BEGIN - Agregado de imagenes para visualización - Producto 4 -->
+          <!-- <div class="col col-xs-12"> -->
+          <!-- <div class="card mb-3 card-neograf"> -->
+          <!-- <div class="row g-0"> -->
+          <!-- <div class="col-md-4"> -->
+          <!-- <img src="App/media/img/product4.jpg" alt="Imagen Carteles" class="product-w-neograf"> -->
+          <!-- </div> -->
+          <!-- <div class="col-md-8"> -->
+          <!-- <div class="card-body"> -->
+          <!-- <h5 class="card-title">Carteles</h5> -->
+          <!-- <p class="card-text">Ofrecemos gran cantidad de diseños para sus carteles. Puede optar por materiales de vinilo o pegatinas.</p> -->
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
           <!--    END   - Agregado de imagenes para visualización - Producto 4 -->
-        </div>
-      </div>
-      <!--    BEGIN   - Agregado de Boton "Ver Mas" -->
-      <a href="App/View/product.html" class="btn btn-primary d-flex justify-content-end boton-e-viewMore">Ver mas</a>
-      <!--    END   - Agregado de Boton "Ver Mas" -->
-      <div class="end-section-neograf object-separate-neograf van-separate-neograf move-right"></div>
-      <!--    END - Sub-Sección 3: Product => Contiene Subtitulo + Imagenes de los productos -->
-    </section>
-    <!--    END - Sección: Se definen: Contenido principal de Products  -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!--    BEGIN   - Agregado de Boton "Ver Mas" -->
+          <!-- <a href="App/View/product.html" class="btn btn-primary d-flex justify-content-end boton-e-viewMore">Ver mas</a> -->
+          <!--    END   - Agregado de Boton "Ver Mas" -->
+          <!-- <div class="end-section-neograf object-separate-neograf van-separate-neograf move-right"></div> -->
+          <!--    END - Sub-Sección 3: Product => Contiene Subtitulo + Imagenes de los productos -->
 
-    <!--    BEGIN - Sección: Se definen: Contenido principal de Service  -->
-    <section id="Service" class="container">
-      <!-- <section id="Service" class="container section-m-neograf"> -->
-      <!--    BEGIN - Sub-Sección 4: Service => Contiene Subtitulo + posibilidad de solicitar servicio -->
-      <!--    BEGIN - Subtitulo Servicios-->
-      <div class="container-fluid d-flex justify-content-center div-m-title-neograf">
-        <!-- <div class="container-fluid d-flex justify-content-center section-m-neograf">         -->
-        <div class="row">
-          <div class="col-12">
-            <h2>Nuestros Servicios</h2>
-          </div>
-        </div>
-      </div>
-      <!--    END - Subtitulo Servicios-->
+          <!-- ****** FINOOOOOOOO  ******* -->
+        </article>
 
-      <!--    BEGIN - Descripción de Servicios -->
-      <div class="row">
-        <div class="col">
-          <div class="card text-center border-light">
-            <div class="card-body">
-              <h5 class="card-title">Servicios especiales para nuestros Clientes</h5>
-              <p class="card-text">Contamos con una gran cantidad de productos, que pueden ser adquiridos con una personalización especial en el pedido.</p>
-              <p class="card-text">Te ofrecemos que puedas realizarlo a través de nuestra web de forma cómoda y facil.</p>
+      </section>
+      <!--    END - Sección: Se definen: Contenido principal de Products  -->
+
+      <!--    BEGIN - Sección: Se definen: Contenido principal de Service  -->
+      <section id="Service" class="row-12 section-card-neograf">
+        <!-- <section id="Service" class="container section-m-neograf"> -->
+        <!--    BEGIN - Sub-Sección 4: Service => Contiene Subtitulo + posibilidad de solicitar servicio -->
+        <article class="col-12">
+
+          <!--    BEGIN - Sub-Sección 1: Home => Contiene Subtitulo +  Información de Bienvenida-->
+          <div class="container-article">
+            <div class="row row-title-card">
+              <h2 class="txt-center">Nuestros Servicios</h2>
+            </div>
+
+            <div class="row">
+              <h5 class="txt-center">Servicios especiales para nuestros Clientes</h5>
+              <p class="txt-center">Contamos con una gran cantidad de productos, que pueden ser adquiridos con una
+                personalización especial en el pedido.</p>
+              <p class="txt-center">Te ofrecemos que puedas realizarlo a través de nuestra web de forma cómoda y facil.
+              </p>
+            </div>
+
+            <div class="row">
               <!--    BEGIN   - Agregado de Boton "Ver Mas" -->
-              <a href="App/View/service.html" class="btn btn-primary d-flex justify-content-end boton-e-viewMore">Ver mas</a>
+              <a href="App/View/service.html">Ver mas</a>
               <!--    END   - Agregado de Boton "Ver Mas" -->
-
             </div>
           </div>
-        </div>
-      </div>
-      <!--    END - Descripción de Servicios -->
-      <!--    END - Sub-Sección 4: Service => Contiene Subtitulo + posibilidad de solicitar servicio -->
-    </section>
-    <!--    END - Sección: Se definen: Contenido principal de Service  -->
-  </main>
+
+
+
+        </article>
+        <!--    BEGIN - Subtitulo Servicios-->
+        <!-- <div class="container-fluid d-flex justify-content-center div-m-title-neograf"> -->
+        <!-- <div class="container-fluid d-flex justify-content-center section-m-neograf">         -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-12"> -->
+        <!-- <h2>Nuestros Servicios</h2> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!--    END - Subtitulo Servicios-->
+
+        <!--    BEGIN - Descripción de Servicios -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col"> -->
+        <!-- <div class="card text-center border-light"> -->
+        <!-- <div class="card-body"> -->
+        <!-- <h5 class="card-title">Servicios especiales para nuestros Clientes</h5> -->
+        <!-- <p class="card-text">Contamos con una gran cantidad de productos, que pueden ser adquiridos con una personalización especial en el pedido.</p> -->
+        <!-- <p class="card-text">Te ofrecemos que puedas realizarlo a través de nuestra web de forma cómoda y facil.</p> -->
+        <!--    BEGIN   - Agregado de Boton "Ver Mas" -->
+        <!-- <a href="App/View/service.html" class="btn btn-primary d-flex justify-content-end boton-e-viewMore">Ver mas</a> -->
+        <!--    END   - Agregado de Boton "Ver Mas" -->
+
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!--    END - Descripción de Servicios -->
+        <!--    END - Sub-Sección 4: Service => Contiene Subtitulo + posibilidad de solicitar servicio -->
+      </section>
+      <!--    END - Sección: Se definen: Contenido principal de Service  -->
+
+    </main>
+    <!-- </div> -->
+  </div>
   <!--    END - Sección Principal -->
 
   <!--    BEGIN - Pie de Site -->
@@ -378,7 +519,7 @@
 
     <div class="card text-center">
 
-    <!--    BEGIN - Banner Footer - Con Iconos Redes Sociales -->  
+      <!--    BEGIN - Banner Footer - Con Iconos Redes Sociales -->
       <div class="card-header footer-header-neograf">
         <div class="row py-4 d-flex align-items-center">
           <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
@@ -386,19 +527,20 @@
           </div>
           <div class="col-md-6 col-lg-7 text-center text-md-right justify-content-evenly">
             <i class="fa fa-twitter"></i>
-            <a href="https://www.facebook.com/jose.l.enriquez.58" class="social-link-neograf"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://www.facebook.com/jose.l.enriquez.58" class="social-link-neograf"><i
+                class="fa fa-facebook-official"></i></a>
             <i class="fa fa-instagram"></i>
-            <i class="fa fa-whatsapp"></i>
+            <a href="https://wa.link/ro56zr"><i class="fa fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
-    <!--    END - Banner Footer - Con Iconos Redes Sociales -->    
-    
-    
+      <!--    END - Banner Footer - Con Iconos Redes Sociales -->
+
+
       <div class="card-body bg-dark">
         <div class="row">
 
-    <!--    BEGIN - Footer - Columna Logo + Maps + Info -->            
+          <!--    BEGIN - Footer - Columna Logo + Maps + Info -->
           <div class="col">
             <img src="App/media/img/PNG LETRAS BLANCAS.PNG" alt="" style="height: 40px; width: 40px;"
               class="d-block mb-2">
@@ -408,9 +550,9 @@
               tabindex="0" class="d-block mb-3"></iframe>
             <p class="d-flex mb-3 text-mute footer-p-neograf">@1990-2020</p>
           </div>
-    <!--    END - Footer - Columna Logo + Maps + Info -->  
+          <!--    END - Footer - Columna Logo + Maps + Info -->
 
-    <!--    BEGIN - Footer - Productos Lista -->   
+          <!--    BEGIN - Footer - Productos Lista -->
           <div class="col-6 col-md">
             <h5>Productos</h5>
             <ul class="list-unstyled">
@@ -425,9 +567,9 @@
               <li><a href="App/View/product.html" class="link-secondary">Volantes</a></li>
             </ul>
           </div>
-    <!--    END - Footer - Productos Lista -->  
+          <!--    END - Footer - Productos Lista -->
 
-    <!--    BEGIN - Footer - Servicios Lista --> 
+          <!--    BEGIN - Footer - Servicios Lista -->
           <div class="col-6 col-md">
             <h5>Servicios</h5>
             <ul class="list-unstyled">
@@ -437,9 +579,9 @@
               <a href="App/View/service.html" class="link-secondary">Contratación</a>
             </ul>
           </div>
-    <!--    END - Footer - Servicios Lista --> 
-    
-    <!--    BEGIN - Footer - Contactos -->     
+          <!--    END - Footer - Servicios Lista -->
+
+          <!--    BEGIN - Footer - Contactos -->
           <div class="col">
             <h5>Contactos</h5>
             <p>
@@ -453,7 +595,7 @@
             </p>
             <p> <i class="fa fa-print mr-3"></i>+54-0336 456788</p>
           </div>
-    <!--    END - Footer - Contactos -->             
+          <!--    END - Footer - Contactos -->
         </div>
       </div>
       <!-- <div class="card-footer text-muted bg-dark">

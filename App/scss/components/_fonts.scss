@@ -1,4 +1,12 @@
 
+.txt-center {
+    text-align: center;
+    margin: 1%;
+}
+
+.card-text-neograf {
+    text-align: center;
+}
 
 .neograf-fonts {
     
@@ -10,6 +18,22 @@
     }
 }
 
+    .card-style-font {
+        // color: #FCB35B;
+        color: whitesmoke;
+    }
+
+.neograf-fonts-link {
+
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+}
 .neograf-product-img-price-txt {
     .neograf-product-price {
 
