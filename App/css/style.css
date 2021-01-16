@@ -12,7 +12,7 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 1em;
 }
-.neograf-fonts h5 {
+.neograf-fonts h1, .neograf-fonts h2, .neograf-fonts h3, .neograf-fonts h4, .neograf-fonts h5 {
   color: #c43bfc;
 }
 
