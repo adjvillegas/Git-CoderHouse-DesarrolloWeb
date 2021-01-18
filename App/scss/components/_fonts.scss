@@ -20,7 +20,13 @@
 
     .card-style-font {
         // color: #FCB35B;
-        color: whitesmoke;
+        color: $color-zero;
+        text-shadow: 2px 1px 0px black;
+        font-weight: bold;
+    }
+
+    .card-style-font-p {
+        font-size: 0.8rem;
     }
 
 .neograf-fonts-link {

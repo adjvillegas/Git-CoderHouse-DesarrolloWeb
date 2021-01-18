@@ -25,10 +25,11 @@ main {
  
                 margin: 5%;
                 padding: 5%;
-                border: 2px solid $color-third-light;
+                border: 1px solid $color-nineth;
                 box-shadow: -1px 11px 31px 6px rgba(0,0,0,0.35);
                 border-radius: 10px;
-                width: 100%;  
+                width: 100%; 
+                background-color: $color-zero; 
 
                 }
 
@@ -97,6 +98,12 @@ main {
     }
 
 } 
+
+.iframe-neograf-responsive {
+     width: 560px;
+     height: 250px;
+}
+
 
 .row-title-card {
     margin: 3%;
@@ -217,7 +224,8 @@ main {
                     transform: scale(0.9);
                     opacity: 0.7;
                     border-radius: 5%;
-                    background-color: $color-fifth;                    
+                    // background-color: $color-fifth;  
+                    background-color: $color-first;                 
                 }
 
         }
@@ -229,6 +237,7 @@ main {
     height: 100%;
     width: 100%;
 }
+
 
 
 

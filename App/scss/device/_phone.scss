@@ -1,7 +1,7 @@
 //Estilos esclusivos para ampliación y adaptación de elementos dentro de dispositivos Mobiles
 
-@media only screen and (max-width: 576px ) {
-
+// @media only screen and (max-width: 576px ) {
+    @media only screen and (max-width: 991px ) {
     .navbar-nav > li {
 
         &:last-of-type {
@@ -42,6 +42,19 @@
     
     .boton-e-viewMore {
         width: max-content; 
+    }
+    
+    .iframe-neograf-responsive {
+        width: 100%;
+        height: 100%;
+   }
+
+   .product-card-phone-row {
+    display: flex;
+}
+
+    .product-card-desktop-row {
+        display: none;
     }
     
 

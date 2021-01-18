@@ -17,7 +17,13 @@
 }
 
 .card-style-font {
-  color: whitesmoke;
+  color: #fff;
+  text-shadow: 2px 1px 0px black;
+  font-weight: bold;
+}
+
+.card-style-font-p {
+  font-size: 0.8rem;
 }
 
 .neograf-fonts-link li {
@@ -240,10 +246,11 @@ main .section-card-neograf article {
 main .section-card-neograf article .container-article {
   margin: 5%;
   padding: 5%;
-  border: 2px solid #f0e7fc;
+  border: 1px solid #fc807f;
   box-shadow: -1px 11px 31px 6px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   width: 100%;
+  background-color: #fff;
 }
 main .section-card-neograf .end-section-neograf {
   border: 5px solid;
@@ -280,6 +287,11 @@ main .section-product-neograf .content_product_index .card-algo {
   background-color: white;
   height: 300px;
   width: 300px;
+}
+
+.iframe-neograf-responsive {
+  width: 560px;
+  height: 250px;
 }
 
 .row-title-card {
@@ -381,7 +393,7 @@ main .section-product-neograf .content_product_index .card-algo {
   transform: scale(0.9);
   opacity: 0.7;
   border-radius: 5%;
-  background-color: #bc4cfc;
+  background-color: #5ba4fc;
 }
 
 .product-photo-responsive {
@@ -427,7 +439,7 @@ footer .footer-p-neograf {
   width: inherit;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
   .navbar-nav > li a {
     text-align: center;
   }
@@ -463,8 +475,21 @@ footer .footer-p-neograf {
   .boton-e-viewMore {
     width: max-content;
   }
+
+  .iframe-neograf-responsive {
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-card-phone-row {
+    display: flex;
+  }
+
+  .product-card-desktop-row {
+    display: none;
+  }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
   .card-neograf {
     max-width: 540px;
     border: 2px solid black;
@@ -484,6 +509,19 @@ footer .footer-p-neograf {
   .product-w-neograf:hover {
     transform: scale(0.9);
     transition: all 0.8s ease-in-out;
+  }
+
+  .iframe-neograf-responsive {
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-card-phone-row {
+    display: none;
+  }
+
+  .product-card-desktop-row {
+    display: flex;
   }
 }
 
