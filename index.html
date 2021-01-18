@@ -13,7 +13,7 @@
   <meta name="description" content="Imprenta Neograf es una Imprenta de San Nicolas con mas de 20 años de experiencia">
   <!-- Palabras claves que ayudan en la busqueda -->
   <meta name="keywords"
-    content="Imprenta, Neograf, San Nicolas de los Arroyos, Productos, Servicios, Almanaques, Folios, Articulos">
+    content="Imprenta, Neograf, San Nicolas, de los Arroyos, Productos, Servicios, Almanaques, Folios, Articulos, Moreno, 238, Av., Rapido, Urgencias">
   <meta name="autor" content="Javier Villegas">
 
   <!-- Open graph - como es el modo al compartir -->
@@ -33,7 +33,8 @@
   <link rel="shortcut icon" href="App/media/img/PNG_LETRAS_BLANCAS.PNG" type="image/x-icon">
 
   <!-- Styles from OutSide-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/baade5447e.js" crossorigin="anonymous"></script>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -245,7 +246,7 @@
 
               <!--    BEGIN - Video informativo-->
               <div class="col-xs-12 col-md-12 col-lg-6">
-                <iframe class="iframe-neograf-responsive" src="https://www.youtube.com/embed/444-i9nwdWw"
+                <iframe class="iframe-neograf-responsive-video" src="https://www.youtube.com/embed/444-i9nwdWw"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
@@ -353,7 +354,9 @@
                     </div>
                     <div class="col-12">
                       <div class="card-body">
-                        <h5 class="card-title card-text-neograf">Almanaques</h5>
+                        <a href="App/View/product.html">
+                          <h5 class="card-title card-text-neograf">Almanaques</h5>
+                        </a>
                         <p class="card-text card-text-neograf">Gran variedad de Almanaques.</p>
                         <p class="card-text card-text-neograf">Nuevos formatos, tamaños y diseños, ideales para su empresa
                         </p>
@@ -373,7 +376,9 @@
                 </div>
                 <div class="col-12">
                   <div class="card-body">
-                    <h5 class="card-title card-text-neograf">Encuadernados</h5>
+                    <a href="App/View/product.html">
+                      <h5 class="card-title card-text-neograf">Encuadernados</h5>
+                    </a>
                     <p class="card-text card-text-neograf">Nuestra experiencia garantiza la calidad del trabajo final.</p>
                     <p class="card-text card-text-neograf">Contactenos para mayor información.</p>
                   </div>
@@ -392,7 +397,9 @@
                 </div>
                 <div class="col-12">
                   <div class="card-body">
-                    <h5 class="card-title card-text-neograf">Impresiones</h5>
+                    <a href="App/View/product.html">
+                      <h5 class="card-title card-text-neograf">Impresiones</h5>
+                    </a>
                     <p class="card-text card-text-neograf">Nuestras impresiones son lo que nos destacan del resto.</p>
                   </div>
                 </div>
@@ -456,32 +463,35 @@
     <div class="card text-center">
 
       <!--    BEGIN - Banner Footer - Con Iconos Redes Sociales -->
-      <div class="card-header footer-header-neograf">
+      <div class="card-header footer-header-neograf-backgroud">
         <div class="row-12 py-3 d-flex align-items-center">
-          <div class="col-md-6 col-lg-4 text-center text-md-left mb-4 mb-md-0">
+          <div class="col-6 col-lg-4 footer-header-neograf-position">
             <h4>Nuestras Redes</h4>
           </div>
 
-          <div class="col-lg-8 d-flex align-items-center justify-content-end">
-            <div class="col-md-6 col-lg-2 text-center text-md-right justify-content-evenly">
-              <a href="https://www.facebook.com/jose.l.enriquez.58" class="social-link-neograf"><span style="font-size: 2em;">
+          <div class="col-6 col-lg-8 footer-header-neograf-position-icon">
+            <div class="col col-lg-2">
+              <a href="https://www.facebook.com/jose.l.enriquez.58" class="social-link-neograf"><span class="footer-size-icon">
                 <i class="fa fa-facebook-official"></i>
               </span></a>
             </div>
-            <div class="col-md-6 col-lg-2 text-center text-md-right justify-content-evenly">
-              <span style="font-size: 2em;">
+            <div class="col col-lg-2">
+              <span  class="footer-size-icon">
                 <i class="fa fa-instagram"></i>
               </span>
             </div>
-            <div class="col-md-6 col-lg-2 text-center text-md-right justify-content-evenly">
-              <a href="https://wa.link/ro56zr">
-                <span style="font-size: 2em;">
-                  <i class="fa fa-whatsapp"></i></a>
-                </span>                
-            </div>   
-          </div>
+            <div class="col col-lg-2">
+              <span  class="footer-size-icon">              
+              <a href="https://wa.link/18nf21">
 
-                 
+                  <i class="fa fa-whatsapp footer-desktop-icon"></i>
+                  <i class="fab fa-whatsapp-square footer-phone-icon"></i>
+                                   
+                </a>                
+                </span>                
+            </div> 
+          </div>
+ 
         </div>
       </div>
       <!--    END - Banner Footer - Con Iconos Redes Sociales -->
@@ -491,19 +501,19 @@
         <div class="row">
 
           <!--    BEGIN - Footer - Columna Logo + Maps + Info -->
-          <div class="col">
+          <div class="col-12 col-lg-3">
             <img src="App/media/img/PNG_LETRAS_BLANCAS.PNG" alt="Logo Footer" style="height: 40px; width: 40px;"
               class="d-block mb-2">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.477417327045!2d-60.23021198484783!3d-33.33247508080781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7679389567ad7%3A0x7603255251e2533!2sImprenta%20Neograf%20talonarios-%20Folletos-tarjetas-etiquetas!5e0!3m2!1ses-419!2sar!4v1605976492895!5m2!1ses-419!2sar"
-              width="200" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0" class="d-block mb-3"></iframe>
+              class="iframe-neograf-responsive-maps d-block" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
             <p class="d-flex mb-3 text-mute footer-p-neograf">@1990-2020</p>
           </div>
           <!--    END - Footer - Columna Logo + Maps + Info -->
 
           <!--    BEGIN - Footer - Productos Lista -->
-          <div class="col-6 col-md">
+          <div class="col-6 col-lg-3">
             <h5>Productos</h5>
             <ul class="list-unstyled">
               <li><a href="#Products" class="link-secondary">Nuestros Productos</a></li>
@@ -520,10 +530,10 @@
           <!--    END - Footer - Productos Lista -->
 
           <!--    BEGIN - Footer - Servicios Lista -->
-          <div class="col-6 col-md">
+          <div class="col-6 col-lg-3">
             <h5>Servicios</h5>
             <ul class="list-unstyled">
-              <li><a href="" class="link-secondary">Nuestros Servicios</a></li>
+              <li><a href="App/View/service.html" class="link-secondary">Nuestros Servicios</a></li>
             </ul>
             <ul class="list-unstyled">
               <li><a href="App/View/service.html" class="link-secondary">Contratación</a></li>
@@ -532,18 +542,18 @@
           <!--    END - Footer - Servicios Lista -->
 
           <!--    BEGIN - Footer - Contactos -->
-          <div class="col">
+          <div class="col col-lg-3">
             <h5>Contactos</h5>
             <p>
-              <i class="fa fa-home mr-3" style="color: white;"></i> San Nicolas de los Arroyos, 2900, AR
+              <i class="fa fa-home mr-3" style="color: white;"></i> Av. Mariano Moreno 238, San Nicolás de Los Arroyos, Provincia de Buenos Aires
             </p>
             <p>
               <i class="fa fa-envelope mr-3"></i> imprentaneograf@hotmail.com
             </p>
             <p>
-              <i class="fa fa-phone"></i> +54-0336 456788
+              <i class="fa fa-phone"></i> +54-0336 443-6100
             </p>
-            <p> <i class="fa fa-print mr-3"></i>+54-0336 456788</p>
+            <p> <i class="fa fa-print mr-3"></i>+54-0336 443-6100</p>
           </div>
           <!--    END - Footer - Contactos -->
         </div>

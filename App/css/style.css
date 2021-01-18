@@ -8,6 +8,13 @@
   text-align: center;
 }
 
+.card-body a {
+  text-decoration: none;
+}
+.card-body a h5 {
+  color: #fc51ae;
+}
+
 .neograf-fonts {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1em;
@@ -289,7 +296,7 @@ main .section-product-neograf .content_product_index .card-algo {
   width: 300px;
 }
 
-.iframe-neograf-responsive {
+.iframe-neograf-responsive-video {
   width: 560px;
   height: 250px;
 }
@@ -410,11 +417,27 @@ footer {
   margin: auto;
   color: white;
 }
-footer .footer-header-neograf {
+footer .footer-header-neograf-backgroud {
   background: linear-gradient(to right, #5ba4fc, #7c7cfc, #9c73eb, #a856fc, #bc4cfc, #c43bfc, #f21cec, #fc51ae, #fc807f, #fcae51);
 }
 footer .footer-p-neograf {
   font-size: 12px;
+}
+
+.footer-header-neograf-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-header-neograf-position-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-size-icon {
+  font-size: 2em;
 }
 
 /* Stile Menu para productos */
@@ -476,7 +499,7 @@ footer .footer-p-neograf {
     width: max-content;
   }
 
-  .iframe-neograf-responsive {
+  .iframe-neograf-responsive-video {
     width: 100%;
     height: 100%;
   }
@@ -487,6 +510,33 @@ footer .footer-p-neograf {
 
   .product-card-desktop-row {
     display: none;
+  }
+
+  .iframe-neograf-responsive-maps {
+    width: 100%;
+    height: 150px;
+  }
+
+  .footer-header-neograf-position-icon {
+    justify-content: space-evenly;
+  }
+  .footer-header-neograf-position-icon > div:last-child {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+  .footer-header-neograf-position-icon > div:last-child a .footer-size-icon {
+    font-size: 3em;
+  }
+
+  .footer-desktop-icon {
+    display: none;
+  }
+
+  .footer-phone-icon {
+    color: #00bb2d;
+    font-size: 1.9em;
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -511,7 +561,7 @@ footer .footer-p-neograf {
     transition: all 0.8s ease-in-out;
   }
 
-  .iframe-neograf-responsive {
+  .iframe-neograf-responsive-video {
     width: 100%;
     height: 100%;
   }
@@ -522,6 +572,19 @@ footer .footer-p-neograf {
 
   .product-card-desktop-row {
     display: flex;
+  }
+
+  .iframe-neograf-responsive-maps {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .footer-desktop-icon {
+    display: inline-block;
+  }
+
+  .footer-phone-icon {
+    display: none;
   }
 }
 

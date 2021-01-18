@@ -3,7 +3,7 @@ footer {
     margin: auto;
     color: $color-txt-secundary;  
     
-    .footer-header-neograf {
+    .footer-header-neograf-backgroud {
         background: $color-linear-gradient-r;
     }
 
@@ -11,4 +11,20 @@ footer {
         font-size: 12px;
     }
 
+}
+
+.footer-header-neograf-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-header-neograf-position-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-size-icon {
+    font-size: 2em;
 }
