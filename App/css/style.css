@@ -1,4 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Clase placeholder - extend - no permite agregar parametros*/
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .txt-center {
   text-align: center;
   margin: 1%;
@@ -413,9 +425,57 @@ main .section-product-neograf .content_product_index .card-algo {
   margin-bottom: 1%;
 }
 
+.footer-header-neograf-position-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-size-icon {
+  font-size: 2em;
+}
+
+.neograf-bottom-view {
+  display: flex;
+  justify-content: flex-end;
+}
+.neograf-bottom-view a {
+  padding: 1% 3%;
+  border: 1px solid #f21cec;
+  border-radius: 15px;
+  text-decoration: none;
+  background: linear-gradient(to top, #9c73eb, #f0e7fc);
+}
+.neograf-bottom-view a p {
+  color: #fff;
+}
+.neograf-bottom-view a:hover {
+  border: 2px solid #f21cec;
+  box-shadow: 2px 0px 10px #999;
+}
+
+.social-link-neograf span i {
+  color: #fff;
+}
+.social-link-neograf span:hover {
+  padding: 10px;
+  border-bottom: 2px solid;
+  border-bottom-color: #fff;
+  transition: padding 0.35s ease-in-out;
+}
+.social-link-neograf span:hover .neograf-whatsapp {
+  color: #00bb2d;
+}
+.social-link-neograf span:hover .neograf-instagram {
+  color: #d6249f;
+}
+.social-link-neograf span:hover .neograf-facebook {
+  color: #3b5998;
+}
+
 footer {
   margin: auto;
-  color: white;
+  color: #fff;
 }
 footer .footer-header-neograf-backgroud {
   background: linear-gradient(to right, #5ba4fc, #7c7cfc, #9c73eb, #a856fc, #bc4cfc, #c43bfc, #f21cec, #fc51ae, #fc807f, #fcae51);
@@ -428,16 +488,6 @@ footer .footer-p-neograf {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-header-neograf-position-icon {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.footer-size-icon {
-  font-size: 2em;
 }
 
 /* Stile Menu para productos */
@@ -537,6 +587,10 @@ footer .footer-p-neograf {
     color: #00bb2d;
     font-size: 1.9em;
     display: inline-block;
+  }
+
+  .social-link-neograf span i {
+    color: #00bb2d;
   }
 }
 @media only screen and (min-width: 992px) {

@@ -11,21 +11,12 @@ $color-seventh: #f21cec;
 $color-eighth: #fc51ae;
 $color-nineth: #fc807f;
 $color-tenth: #fcae51;
-$color-txt-secundary: white;
 $color-whatsapp: #00bb2d;
-// $color-linear-gradient-n: linear-gradient(  $color-fill 15%,
-//                                             $color-first, 
-//                                             $color-second, 
-//                                             $color-third, 
-//                                             $color-fourth, 
-//                                             $color-fifth, 
-//                                             $color-sixth,
-//                                             $color-seventh,
-//                                             $color-eighth,
-//                                             $color-nineth,
-//                                             $color-tenth 
-                                            
-//                                         );
+
+$color-linear-gradient-n: linear-gradient(  to top, 
+                                            $color-third, 
+                                            $color-third-light
+                                        );
 
 $color-linear-gradient-r: linear-gradient( to right, 
                                             $color-first, 

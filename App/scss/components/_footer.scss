@@ -1,7 +1,7 @@
 //Estilos esclusivos para ampliación y adaptación de elementos dentro de Footer
 footer {
     margin: auto;
-    color: $color-txt-secundary;  
+    color: $color-zero;  
     
     .footer-header-neograf-backgroud {
         background: $color-linear-gradient-r;
@@ -19,12 +19,4 @@ footer {
     align-items: center;
 }
 
-.footer-header-neograf-position-icon {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
-.footer-size-icon {
-    font-size: 2em;
-}

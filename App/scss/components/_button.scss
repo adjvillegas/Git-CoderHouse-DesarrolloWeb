@@ -4,3 +4,72 @@
     width: 6.5%; 
     margin-bottom: 1%;
 }
+
+
+.footer-header-neograf-position-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-size-icon {
+    font-size: 2em;
+}
+
+.neograf-bottom-view {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+
+        padding: 1% 3%;
+        border: 1px solid $color-seventh;
+        border-radius: 15px;
+        text-decoration: none;
+        background: $color-linear-gradient-n;
+        p {
+            color: $color-zero;
+        }
+        &:hover {
+            border: 2px solid $color-seventh;            
+            box-shadow: 2px 0px 10px #999;
+
+        }        
+    }
+
+
+}
+
+.social-link-neograf {
+
+    span {
+
+        i {
+            color: $color-zero;
+          
+        }
+
+        &:hover {
+            
+            padding: 10px;
+            border-bottom: 2px solid ;
+            border-bottom-color: $color-zero;
+            transition: padding .35s ease-in-out;;
+
+            .neograf-whatsapp {
+                color: $color-whatsapp;
+            }
+
+            .neograf-instagram {
+                color: #d6249f;
+            }
+
+            .neograf-facebook {
+                color: #3b5998;
+            }
+    
+        }        
+
+    }
+
+}
