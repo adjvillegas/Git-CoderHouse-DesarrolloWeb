@@ -41,11 +41,6 @@ main {
             @include m-border(5px);
         }
 
-        .object-separate-neograf {
-
-            position: static;
-
-        }
 
         .van-separate-neograf {
             top: auto;
@@ -55,9 +50,6 @@ main {
         .container-color-neograf {
             @include m-border(2px);
 
-            .media-float-right {
-                float: right;
-            }
         }
         
         .aboutus-p-neograf {
@@ -70,9 +62,7 @@ main {
 
         &:hover {
 
-            .object-separate-neograf {
-                transition: all 1.5s ease-in-out;
-            }
+
             .move-right {
                 width: 55%;
                 @include m-transform(translate(350px,0));

@@ -16,34 +16,12 @@
         height: 200px;
     }
     
-    .object-separate-neograf {
-        width: 55%;
-      }
-    
-      .media-float-right {
-        float: none;
-        margin-left: 0;
-    }  
-    
-    .media-float-right iframe {
-        height: auto;
-        width: 100%;
-    }  
     
     .product-w-neograf {
         width: 100%;
         height: 100%;
     }
-    
-    .card-body-redefine-neograf {
-        width: max-content;
-        height: max-content;
-    }
-    
-    .boton-e-viewMore {
-        width: max-content; 
-    }
-    
+        
     .iframe-neograf-responsive-video {
         width: 100%;
         height: 100%;
@@ -86,15 +64,37 @@
     display: inline-block;
 } 
 
+ .position-phone-icon {
+     text-align: end;
+ }
+
 .social-link-neograf {
+
+    // text-align: end;
 
     span {
 
-        i {
+        .neograf-facebook {
+            color: $color-zero;
+        }
+
+        .neograf-instagram {
+            color: $color-zero;
+        }
+
+        .neograf-whatsapp {
             color: $color-whatsapp;
         }
+
+        
     }
 
+}
+
+.neograf-product-card {
+    h5 {
+        font-size: 1em;
+    }
 }
 
 }

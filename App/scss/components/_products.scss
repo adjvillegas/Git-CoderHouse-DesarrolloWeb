@@ -1,13 +1,10 @@
 /* Stile Menu para productos */
-.list-group-item.active {
-
-        background-color: $color-third;
-        border-color: $color-nineth;
-}
 
 .main-products {
 
     background-color: $color-third-light;
+
+    section {
 
     .list-aside-product {
         
@@ -37,4 +34,5 @@
                 }
             }
     }
+}
 }

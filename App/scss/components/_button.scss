@@ -1,11 +1,5 @@
 //Estilos esclusivos para ampliación y adaptación de elementos Button
 
-.boton-e-viewMore {
-    width: 6.5%; 
-    margin-bottom: 1%;
-}
-
-
 .footer-header-neograf-position-icon {
     display: flex;
     justify-content: flex-end;
@@ -37,39 +31,5 @@
         }        
     }
 
-
-}
-
-.social-link-neograf {
-
-    span {
-
-        i {
-            color: $color-zero;
-          
-        }
-
-        &:hover {
-            
-            padding: 10px;
-            border-bottom: 2px solid ;
-            border-bottom-color: $color-zero;
-            transition: padding .35s ease-in-out;;
-
-            .neograf-whatsapp {
-                color: $color-whatsapp;
-            }
-
-            .neograf-instagram {
-                color: #d6249f;
-            }
-
-            .neograf-facebook {
-                color: #3b5998;
-            }
-    
-        }        
-
-    }
 
 }

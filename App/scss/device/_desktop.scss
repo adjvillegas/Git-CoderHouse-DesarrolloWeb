@@ -4,12 +4,7 @@
         max-width: 540px; 
         border: 2px solid black;
     }
-    
-    .card-body-redefine-neograf {
-        width: 200px;
-        height: 180px;
-    }
-    
+        
     .product-w-neograf {
         width: 100%;
         height: 100%;
@@ -48,4 +43,45 @@
    .footer-phone-icon {
        display: none;
    }
+
+   .social-link-neograf {
+
+    span {
+
+        .neograf-whatsapp {
+            color: $color-zero;
+        }
+
+        .neograf-instagram {
+            color: $color-zero;
+        }
+
+        .neograf-facebook {
+            color: $color-zero;
+        }
+
+        &:hover {
+            
+            padding: 10px;
+            border-bottom: 2px solid ;
+            border-bottom-color: $color-zero;
+            transition: padding .35s ease-in-out;;
+
+            .neograf-whatsapp {
+                color: $color-whatsapp;
+            }
+
+            .neograf-instagram {
+                color: #d6249f;
+            }
+
+            .neograf-facebook {
+                color: #3b5998;
+            }
+    
+        }        
+
+    }
+
+}   
 }
