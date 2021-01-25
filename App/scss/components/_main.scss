@@ -17,8 +17,7 @@ main {
  
             article {
 
-                display: flex;
-                justify-content: center;
+                @extend %d-flex-center;
                 align-self: center;
 
                 .container-article {
@@ -76,13 +75,12 @@ main {
 
         .content_product_index {
 
-            display: flex;
-            justify-content: space-around;
+            @extend %d-flex-around;
 
             .card-algo {
                 background-color: white;
-                height: 300px;
-                width: 300px;
+                @include m-responsive(300px, 300px);
+
             }
         }        
     }
@@ -90,8 +88,9 @@ main {
 } 
 
 .iframe-neograf-responsive-video {
-     width: 560px;
-     height: 250px;
+
+    @include m-responsive(250px, 560px);
+
 }
 
 
@@ -100,83 +99,25 @@ main {
     align-self: center;
 }
 
-@keyframes animation-bot-right {
-
-    0% {
-        top: -220px;
-        left: 10px;
-        z-index: 5;    
-    }
-
-    40% {
-        top: -140px;
-        left: 90px;
-        z-index: 5;
-    }
-
-    50% {
-        transform: scale(0.5);
-    }
-
-    60% {
-        top: -140px;
-        left: 90px;
-        z-index: 4;   
-    }
-
-    100% {
-        top: -220px;
-        left: 10px;
-        z-index: 4;    
-    }
-
-}
-
-@keyframes animation-top-left {
-
-
-    0% {
-        top: 0px;
-        right: 0px;
-        z-index: 4;  
-    }
-
-    40% {
-        top: -89px;
-        right: 90px;
-        z-index: 4;   
-    }
-    50% {
-        transform: scale(0.5);
-    }
-    60% {
-        top: -89px;
-        right: 90px;
-        z-index: 5;    
-    }
-
-    100% {
-        top: 0px;
-        right: 0px;
-        z-index: 5; 
-    }
+.main_cloth_container {
+    z-index: 0;
+    position: relative;
 
 }
 
 .container-card-product {
 
-    display: flex;
-    justify-content: space-around;
+    @extend %d-flex-around;
 
     .card-product {
         height: 230px; 
 
         .card-product-info {
-            display: flex;
+            
+            @extend %d-flex-center;
             position: relative;
             background-color: white;           
             z-index: 4;
-            justify-content: center;
             align-self: center;         
         }
 
@@ -189,8 +130,9 @@ main {
         }
 
         .card-responsive {
-            height: 100%;
-            width: 100%;
+
+            @include m-responsive(100%, 100%);
+
         }
 
         &:hover {
@@ -224,8 +166,9 @@ main {
 }
 
 .product-photo-responsive {
-    height: 100%;
-    width: 100%;
+
+    @include m-responsive(100%, 100%);
+
 }
 
 

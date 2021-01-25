@@ -4,7 +4,72 @@
   box-sizing: border-box;
 }
 
+@keyframes animation-top-left {
+  0% {
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+  }
+  40% {
+    top: -89px;
+    right: 90px;
+    z-index: 4;
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  60% {
+    top: -89px;
+    right: 90px;
+    z-index: 5;
+  }
+  100% {
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+  }
+}
+@keyframes animation-bot-right {
+  0% {
+    top: -220px;
+    left: 10px;
+    z-index: 5;
+  }
+  40% {
+    top: -140px;
+    left: 90px;
+    z-index: 5;
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  60% {
+    top: -140px;
+    left: 90px;
+    z-index: 4;
+  }
+  100% {
+    top: -220px;
+    left: 10px;
+    z-index: 4;
+  }
+}
 /* Clase placeholder - extend - no permite agregar parametros*/
+.neograf-bottom-view, .footer-header-neograf-position-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-header-neograf-position, .container-card-product .card-product .card-product-info, main .section-card-neograf article {
+  display: flex;
+  justify-content: center;
+}
+
+.container-card-product, main .section-product-neograf .content_product_index {
+  display: flex;
+  justify-content: space-around;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -14,6 +79,11 @@ p {
 .txt-center {
   text-align: center;
   margin: 1%;
+  overflow-wrap: break-word;
+}
+
+.txt-responsive {
+  overflow-wrap: break-word;
 }
 
 .card-text-neograf {
@@ -73,135 +143,6 @@ p {
   border-image-slice: 1;
 }
 
-@keyframes animation-nav {
-  0% {
-    background-color: #fff;
-    border: 1px solid #fff;
-  }
-  5% {
-    background-color: #5ba4fc;
-    border: 1px solid #5ba4fc;
-  }
-  10% {
-    background-color: #7c7cfc;
-    border: 1px solid #7c7cfc;
-  }
-  15% {
-    background-color: #9c73eb;
-    border: 1px solid #9c73eb;
-  }
-  20% {
-    background-color: #a856fc;
-    border: 1px solid #a856fc;
-  }
-  25% {
-    background-color: #bc4cfc;
-    border: 1px solid #bc4cfc;
-  }
-  30% {
-    background-color: #c43bfc;
-    border: 1px solid #c43bfc;
-  }
-  35% {
-    background-color: #f21cec;
-    border: 1px solid #f21cec;
-  }
-  40% {
-    background-color: #fc51ae;
-    border: 1px solid #fc51ae;
-  }
-  45% {
-    background-color: #fc807f;
-    border: 1px solid #fc807f;
-  }
-  50% {
-    background-color: #9c73eb;
-    border: 1px solid #9c73eb;
-  }
-  60% {
-    background-color: #fc807f;
-    border: 1px solid #fc807f;
-  }
-  65% {
-    background-color: #fc51ae;
-    border: 1px solid #fc51ae;
-  }
-  70% {
-    background-color: #f21cec;
-    border: 1px solid #f21cec;
-  }
-  75% {
-    background-color: #c43bfc;
-    border: 1px solid #c43bfc;
-  }
-  80% {
-    background-color: #bc4cfc;
-    border: 1px solid #bc4cfc;
-  }
-  85% {
-    background-color: #a856fc;
-    border: 1px solid #a856fc;
-  }
-  90% {
-    background-color: #9c73eb;
-    border: 1px solid #9c73eb;
-  }
-  95% {
-    background-color: #7c7cfc;
-    border: 1px solid #7c7cfc;
-  }
-  100% {
-    background-color: #5ba4fc;
-    border: 1px solid #5ba4fc;
-  }
-}
-.neograf-sub-nav {
-  z-index: 99;
-  position: relative;
-}
-.neograf-sub-nav div img {
-  margin: 10%;
-}
-.neograf-sub-nav .neograf-nav-bar {
-  align-self: center;
-  width: 70%;
-}
-.neograf-sub-nav .neograf-nav-bar ul {
-  justify-content: space-around;
-}
-.neograf-sub-nav .neograf-nav-bar ul li {
-  align-self: center;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: bold;
-  border: 2px solid #fc51ae;
-  border-radius: 5px;
-}
-.neograf-sub-nav .neograf-nav-bar ul li a {
-  color: #5ba4fc;
-}
-.neograf-sub-nav .neograf-nav-bar ul li a p {
-  margin: 0%;
-}
-.neograf-sub-nav .neograf-nav-bar ul li:hover {
-  animation-name: animation-nav;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  transform: scale(1.4);
-}
-.neograf-sub-nav .neograf-nav-bar ul li:hover a {
-  color: white;
-}
-.neograf-sub-nav .neograf-nav-bar ul li:hover a p {
-  animation: tada;
-  animation-duration: 1s;
-}
-
-.main_cloth_container {
-  z-index: 0;
-  position: relative;
-}
-
 .carousel-height-600 {
   height: 600px;
 }
@@ -220,8 +161,6 @@ main .section-card-neograf {
   margin-top: 4%;
 }
 main .section-card-neograf article {
-  display: flex;
-  justify-content: center;
   align-self: center;
 }
 main .section-card-neograf article .container-article {
@@ -251,10 +190,6 @@ main .section-card-neograf:hover .move-right {
   width: 55%;
   transform: translate(350px, 0);
 }
-main .section-product-neograf .content_product_index {
-  display: flex;
-  justify-content: space-around;
-}
 main .section-product-neograf .content_product_index .card-algo {
   background-color: white;
   height: 300px;
@@ -262,8 +197,8 @@ main .section-product-neograf .content_product_index .card-algo {
 }
 
 .iframe-neograf-responsive-video {
-  width: 560px;
   height: 250px;
+  width: 560px;
 }
 
 .row-title-card {
@@ -271,69 +206,18 @@ main .section-product-neograf .content_product_index .card-algo {
   align-self: center;
 }
 
-@keyframes animation-bot-right {
-  0% {
-    top: -220px;
-    left: 10px;
-    z-index: 5;
-  }
-  40% {
-    top: -140px;
-    left: 90px;
-    z-index: 5;
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  60% {
-    top: -140px;
-    left: 90px;
-    z-index: 4;
-  }
-  100% {
-    top: -220px;
-    left: 10px;
-    z-index: 4;
-  }
+.main_cloth_container {
+  z-index: 0;
+  position: relative;
 }
-@keyframes animation-top-left {
-  0% {
-    top: 0px;
-    right: 0px;
-    z-index: 4;
-  }
-  40% {
-    top: -89px;
-    right: 90px;
-    z-index: 4;
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  60% {
-    top: -89px;
-    right: 90px;
-    z-index: 5;
-  }
-  100% {
-    top: 0px;
-    right: 0px;
-    z-index: 5;
-  }
-}
-.container-card-product {
-  display: flex;
-  justify-content: space-around;
-}
+
 .container-card-product .card-product {
   height: 230px;
 }
 .container-card-product .card-product .card-product-info {
-  display: flex;
   position: relative;
   background-color: white;
   z-index: 4;
-  justify-content: center;
   align-self: center;
 }
 .container-card-product .card-product .card-product-photo {
@@ -374,8 +258,6 @@ main .section-product-neograf .content_product_index .card-algo {
 }
 
 .footer-header-neograf-position-icon {
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 
@@ -383,10 +265,6 @@ main .section-product-neograf .content_product_index .card-algo {
   font-size: 2em;
 }
 
-.neograf-bottom-view {
-  display: flex;
-  justify-content: flex-end;
-}
 .neograf-bottom-view a {
   padding: 1% 3%;
   border: 1px solid #f21cec;
@@ -414,8 +292,6 @@ footer .footer-p-neograf {
 }
 
 .footer-header-neograf-position {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -446,13 +322,13 @@ footer .footer-p-neograf {
   }
 
   .product-w-neograf {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 
   .iframe-neograf-responsive-video {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 
   .product-card-phone-row {
@@ -464,8 +340,8 @@ footer .footer-p-neograf {
   }
 
   .iframe-neograf-responsive-maps {
-    width: 100%;
     height: 150px;
+    width: 100%;
   }
 
   .footer-header-neograf-position-icon {
@@ -515,8 +391,8 @@ footer .footer-p-neograf {
   }
 
   .product-w-neograf {
-    width: 100%;
     height: 100%;
+    width: 100%;
     transform: scale(0.6);
   }
 
@@ -526,8 +402,8 @@ footer .footer-p-neograf {
   }
 
   .iframe-neograf-responsive-video {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 
   .product-card-phone-row {

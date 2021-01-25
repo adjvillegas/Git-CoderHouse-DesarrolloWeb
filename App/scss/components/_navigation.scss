@@ -13,189 +13,178 @@
 
 }
 
-@keyframes animation-nav {
+// @keyframes animation-nav {
 
-    0% {
-        background-color: $color-zero;
-        border: 1px solid $color-zero;
-    }
+//     0% {
+//         background-color: $color-zero;
+//         border: 1px solid $color-zero;
+//     }
 
-    5% {
-        background-color: $color-first;
-        border: 1px solid $color-first;
-    }
+//     5% {
+//         background-color: $color-first;
+//         border: 1px solid $color-first;
+//     }
 
-    10% {
-        background-color: $color-second;
-        border: 1px solid $color-second;
-    }
+//     10% {
+//         background-color: $color-second;
+//         border: 1px solid $color-second;
+//     }
 
-    15% {
-        background-color: $color-third;
-        border: 1px solid $color-third;
-    }
+//     15% {
+//         background-color: $color-third;
+//         border: 1px solid $color-third;
+//     }
 
-    20% {
-        background-color: $color-fourth;
-        border: 1px solid $color-fourth;
-    }
+//     20% {
+//         background-color: $color-fourth;
+//         border: 1px solid $color-fourth;
+//     }
     
-    25% {
-        background-color: $color-fifth;
-        border: 1px solid $color-fifth;
-    }
+//     25% {
+//         background-color: $color-fifth;
+//         border: 1px solid $color-fifth;
+//     }
     
-    30% {
-        background-color: $color-sixth;
-        border: 1px solid $color-sixth;
-    }
+//     30% {
+//         background-color: $color-sixth;
+//         border: 1px solid $color-sixth;
+//     }
     
-    35% {
-        background-color: $color-seventh;
-        border: 1px solid $color-seventh;
-    }
+//     35% {
+//         background-color: $color-seventh;
+//         border: 1px solid $color-seventh;
+//     }
     
-    40% {
-        background-color: $color-eighth;
-        border: 1px solid $color-eighth;
-    }
+//     40% {
+//         background-color: $color-eighth;
+//         border: 1px solid $color-eighth;
+//     }
     
-    45% {
-        background-color: $color-nineth;
-        border: 1px solid $color-nineth;
-    }
+//     45% {
+//         background-color: $color-nineth;
+//         border: 1px solid $color-nineth;
+//     }
     
-    50% {
-        background-color: $color-third;
-        border: 1px solid $color-third;        
-    }
+//     50% {
+//         background-color: $color-third;
+//         border: 1px solid $color-third;        
+//     }
 
-    60% {
-        background-color: $color-nineth;
-        border: 1px solid $color-nineth;
-    }    
+//     60% {
+//         background-color: $color-nineth;
+//         border: 1px solid $color-nineth;
+//     }    
 
-    65% {
-        background-color: $color-eighth;
-        border: 1px solid $color-eighth;
-    }    
+//     65% {
+//         background-color: $color-eighth;
+//         border: 1px solid $color-eighth;
+//     }    
 
-    70% {
-        background-color: $color-seventh;
-        border: 1px solid $color-seventh;
-    }    
+//     70% {
+//         background-color: $color-seventh;
+//         border: 1px solid $color-seventh;
+//     }    
 
-    75% {
-        background-color: $color-sixth;
-        border: 1px solid $color-sixth;
-    }  
+//     75% {
+//         background-color: $color-sixth;
+//         border: 1px solid $color-sixth;
+//     }  
     
-    80% {
-        background-color: $color-fifth;
-        border: 1px solid $color-fifth;
-    }    
+//     80% {
+//         background-color: $color-fifth;
+//         border: 1px solid $color-fifth;
+//     }    
 
-    85% {
-        background-color: $color-fourth;
-        border: 1px solid $color-fourth;
-    }    
+//     85% {
+//         background-color: $color-fourth;
+//         border: 1px solid $color-fourth;
+//     }    
 
-    90% {
-        background-color: $color-third;
-        border: 1px solid $color-third;
-    }    
+//     90% {
+//         background-color: $color-third;
+//         border: 1px solid $color-third;
+//     }    
 
-    95% {
-        background-color: $color-second;
-        border: 1px solid $color-second;
-    }   
+//     95% {
+//         background-color: $color-second;
+//         border: 1px solid $color-second;
+//     }   
 
-    100% {
-        background-color: $color-first;
-        border: 1px solid $color-first;
-    }
+//     100% {
+//         background-color: $color-first;
+//         border: 1px solid $color-first;
+//     }
 
-}
-
-.neograf-sub-nav {
-    
-    z-index: 99;
-    position: relative;
-    div {
-        img {
-            margin: 10%;
-        }
-    }
-
-    .neograf-nav-bar {
-
-        align-self: center; 
-        width: 70%;
-  
-      ul {
- 
-        justify-content: space-around;
-          
-          li {
-
-              align-self: center; 
-              text-align: center;
-              font-size: 1.2em;
-              font-weight: bold;
-  
-              border: 2px solid $color-eighth;
-              border-radius: 5px;
-
-
-  
-              a {
-
-                  color: $color-first;
-
-                p {
-                    margin: 0%;
-                    // padding: 2% 20%;
-                }
-              
-            }
-  
-              &:hover {
-  
-                  animation-name: animation-nav;
-                  animation-duration: 5s;
-                  animation-iteration-count: infinite;
-                  transform: scale(1.4);
-  
-                  a {
-
-                      color: white;
-
-                      p {
-
-                      animation: tada;
-                      animation-duration: 1s;
-
-                      }
-
-                  }
-  
-              }
-          }
-  
-      }
-  }
-
-}
-
-.main_cloth_container {
-    z-index: 0;
-    position: relative;
-    // height: 100vh;
-    // background-color: $color-fill;
-    // top: -64px;
-    // opacity: 30%;
-
-}
-// .main_paint {
-  
 // }
+
+// .neograf-sub-nav {
+    
+//     z-index: 99;
+//     position: relative;
+//     div {
+//         img {
+//             margin: 10%;
+//         }
+//     }
+
+//     .neograf-nav-bar {
+
+//         align-self: center; 
+//         width: 70%;
+  
+//       ul {
+ 
+//         justify-content: space-around;
+          
+//           li {
+
+//               align-self: center; 
+//               text-align: center;
+//               font-size: 1.2em;
+//               font-weight: bold;
+  
+//               border: 2px solid $color-eighth;
+//               border-radius: 5px;
+
+
+  
+//               a {
+
+//                   color: $color-first;
+
+//                 p {
+//                     margin: 0%;
+//                     // padding: 2% 20%;
+//                 }
+              
+//             }
+  
+//               &:hover {
+  
+//                   animation-name: animation-nav;
+//                   animation-duration: 5s;
+//                   animation-iteration-count: infinite;
+//                   transform: scale(1.4);
+  
+//                   a {
+
+//                       color: white;
+
+//                       p {
+
+//                       animation: tada;
+//                       animation-duration: 1s;
+
+//                       }
+
+//                   }
+  
+//               }
+//           }
+  
+//       }
+//   }
+
+// }
+
+

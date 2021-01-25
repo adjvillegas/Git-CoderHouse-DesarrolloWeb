@@ -1,8 +1,8 @@
 //Estilos esclusivos para ampliación y adaptación de elementos Button
 
 .footer-header-neograf-position-icon {
-    display: flex;
-    justify-content: flex-end;
+
+    @extend %d-flex-end;
     align-items: center;
 }
 
@@ -11,8 +11,8 @@
 }
 
 .neograf-bottom-view {
-    display: flex;
-    justify-content: flex-end;
+    
+    @extend %d-flex-end;
 
     a {
 
@@ -26,7 +26,7 @@
         }
         &:hover {
             border: 2px solid $color-seventh;            
-            box-shadow: 2px 0px 10px #999;
+            box-shadow: 2px 0px 10px $color-base;
 
         }        
     }

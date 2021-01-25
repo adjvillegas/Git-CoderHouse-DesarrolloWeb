@@ -13,3 +13,8 @@
 @mixin m-transform($property) {
     transform: $property;
 }
+
+@mixin m-responsive ($height, $width) {
+    height: $height;
+    width: $width;
+}

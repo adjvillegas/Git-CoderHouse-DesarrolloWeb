@@ -14,8 +14,8 @@ footer {
 }
 
 .footer-header-neograf-position {
-    display: flex;
-    justify-content: center;
+    
+    @extend %d-flex-center;
     align-items: center;
 }
 

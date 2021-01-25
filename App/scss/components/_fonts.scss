@@ -4,9 +4,15 @@ p {
             box-sizing: border-box;
     }
 
-        .txt-center {
+
+.txt-center {
     text-align: center;
     margin: 1%;
+    overflow-wrap: break-word;
+        }
+
+.txt-responsive {
+    overflow-wrap: break-word;
 }
 
 .card-text-neograf {
@@ -37,7 +43,7 @@ p {
 }
 
     .card-style-font {
-        // color: #FCB35B;
+   
         color: $color-zero;
         text-shadow: 2px 1px 0px black;
         font-weight: bold;
@@ -61,12 +67,12 @@ p {
 .neograf-product-img-price-txt {
     .neograf-product-price {
 
-        color: #fcae51;
+        color: $color-tenth;
         font-weight: bold;
     }
 
     .neograf-product-quantity {
-        color: #999;
+        color: $color-base;
         font-size: 11px;
         white-space: nowrap;
     }
